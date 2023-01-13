@@ -1,8 +1,10 @@
-const Bio = ({avatar, name, tagline, role}) => {
+import Image from "next/image"
+
+const Bio = ({ avatar, name, tagline, role }) => {
   return (
     <div className="flex gap-x-5 gap-y-5 mb-10">
       <div className="text-xs">
-        <img className="h-24 w-24 rounded-full" src={avatar} alt={`Headshot of ${name}`} />  
+        <Image className="h-24 w-24 rounded-full" src={avatar} alt={`Headshot of ${name}`} />  
       </div>
       <div className="flex flex-col justify-center">
         <div>

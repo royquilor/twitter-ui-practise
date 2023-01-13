@@ -22,12 +22,12 @@ export default function Home() {
 avatar = "https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg"
 name = "Roy Quilor"
 tagline = "Helping beginners learn design"
-role = "Designer @ awwesome"
+role = "Designer awwesome"
 />
           <PostForm />
           <ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
             <li className="py-10">
-              <Post content="Let's create design and build templates" date="3/1/2023" />
+              <Post content="Create design and build templates" date="3/1/2023" />
             </li>
             <li className="py-10">
               <Post content="I love Figma" date="2/1/2023" />
