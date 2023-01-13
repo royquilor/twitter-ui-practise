@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/styles.css'
 import type { AppProps } from 'next/app'
 import { Inter } from '@next/font/google'
 
@@ -9,7 +9,7 @@ import { Inter } from '@next/font/google'
 
 import localFont from '@next/font/local'
 const myFont = localFont({
-  src: '../fonts/Mona-Sans.woff2',
+  src: '../../fonts/Mona-Sans.woff2',
   variable: '--font-mona-sans',
 })
 
