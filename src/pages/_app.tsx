@@ -15,7 +15,7 @@ const myFont = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${myFont.variable} font-sans`}>
+    <main className={`${myFont.variable} font-sans min-h-screen`}>
       <Component {...pageProps} />
     </main>
   )

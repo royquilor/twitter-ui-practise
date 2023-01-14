@@ -2,9 +2,14 @@ import Image from "next/image"
 
 const Bio = ({ avatar, name, tagline, role }) => {
   return (
-    <div className="flex gap-x-5 gap-y-5 mb-10">
-      <div className="text-xs">
-        <Image className="h-24 w-24 rounded-full" src={avatar} alt={`Headshot of ${name}`} />  
+    <div className="flex gap-x-5 gap-y-5 p-8">
+      <div className="flex-shrink-0 text-xs">
+        <Image
+          width={96}
+          height={96}
+          className="h-24 w-24 rounded-full"
+          src={avatar}
+          alt={`Headshot of ${name}`} />  
       </div>
       <div className="flex flex-col justify-center">
         <div>

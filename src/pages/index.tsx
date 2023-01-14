@@ -4,6 +4,24 @@ import { Inter } from '@next/font/google'
 import Post from '../components/Post'
 import PostForm from '../components/PostForm'
 import Bio from '../components/Bio'
+import NavItem from '../components/NavItem/NavItem'
+import AccountNavItem from '../components/AccountNavItem'
+import Link from 'next/link'
+import HeaderBlock from '../components/HeaderBlock/HeaderBlock'
+import TweetForm from '../components/TweetForm'
+import Search from '../components/Search'
+import BlockItem from '../components/BlockItem'
+import BlockWrap from '../components/BlockWrap'
+import BlockTrends from '../components/BlockTrends'
+import Footer from '../components/Footer'
+import { HiOutlineHome } from "react-icons/hi2";
+import { HiHashtag } from "react-icons/hi2";
+import { HiOutlineBell } from "react-icons/hi2";
+import { HiOutlineEnvelope } from "react-icons/hi2";
+import { HiOutlineBookmark } from "react-icons/hi2";
+import { HiOutlineUser } from "react-icons/hi2";
+import { HiOutlineEllipsisHorizontalCircle } from "react-icons/hi2";
+import { SiTwitter } from "react-icons/si";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,30 +34,107 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        
-      <div className="max-w-2xl mx-auto p-8">
-          <Bio
-avatar = "https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg"
-name = "Roy Quilor"
-tagline = "Helping beginners learn design"
-role = "Designer awwesome"
-/>
-          <PostForm />
-          <ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
-            <li className="py-10">
-              <Post content="Create design and build templates" date="3/1/2023" />
-            </li>
-            <li className="py-10">
-              <Post content="I love Figma" date="2/1/2023" />
-            </li>
-            <li className="py-10">
-              <Post content="Tailwind CSS is insane" date="1/1/2023" />
-            </li>
-            
-        </ul>
-
+      <div className="min-h-screen flex xl:grid xl:grid-cols-3">
+        <div className="flex w-24 xl:w-full xl:flex-1 xl:justify-end ">
+          <header className="flex flex-col w-24 xl:w-64 my-2 fixed h-full">
+            <div className="flex flex-col flex-1">
+          <NavItem href="/" text="">
+            <SiTwitter className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="Home">
+            <HiOutlineHome className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="Explore">
+            <HiHashtag className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="Notifications">
+            <HiOutlineBell className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="Messages">
+            <HiOutlineEnvelope className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="Bookmarks">
+            <HiOutlineBookmark className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="Profile">
+            <HiOutlineUser className="w-6 h-6" />
+          </NavItem>
+          <NavItem href="/" text="More">
+            <HiOutlineEllipsisHorizontalCircle className="w-6 h-6" />
+              </NavItem>
+            </div>
+            <div>
+              <AccountNavItem />
+            </div>
+          </header> 
         </div>
-      
+        <div className="col-span-2 flex flex-1 ">
+          <div className="max-w-[37.5rem] w-full border-x border-slate-200">
+            <HeaderBlock title="Home" href="/" text="Top tweets" />
+            <TweetForm />
+            {/* <Bio
+  avatar = "https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg"
+  name = "Roy Quilor"
+  tagline = "Helping beginners learn design"
+  role = "Designer awwesome"
+  /> */}
+            {/* <PostForm /> */}
+            <ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="Create design and build templates" date="3/1/2023">
+                  <div className="w-full relative h-80 mb-4">
+                  <Image
+                    fill={true}
+                    style={{objectFit:"cover"}}
+                    className="rounded-3xl"
+                    src="https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80"
+                    alt="Gradient" />  
+                  </div>
+                </Post>  
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="I love Figma" date="2/1/2023">&nbsp;</Post>
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="Tailwind CSS is insane" date="1/1/2023">&nbsp;</Post>
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="Next JS documentation is so good" date="1/1/2023">&nbsp;</Post>
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="How to use custom fonts with Storybook" date="1/1/2023">&nbsp;</Post>
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="Why use Storybook?" date="1/1/2023">&nbsp;</Post>
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="Vercel and Neflify are pretty cool" date="1/1/2023">&nbsp;</Post>
+              </li>
+              <li className="p-4">
+                <Post name="Roy Quilor" username="royquilor" content="Webflow community is awesome" date="1/1/2023">&nbsp;</Post>
+              </li>
+            </ul>
+          </div>
+          <div className="hidden lg:flex flex-col flex-1 sticky top-0 ">
+            <div className="xflex-1 xbg-slate-100 w-full min-w-[18rem] max-w-[22rem] xh-full mx-8">
+              <Search />
+              <BlockWrap title="What's happening" href="/">   
+                <BlockTrends title="Next JS" category="Development" stat="57.5K" />
+                <BlockTrends title="Figma" category="Design" stat="107.5K" />
+                <BlockTrends title="Webflow" category="Design" stat="127.5K" />
+                <BlockTrends title="Tailwind CSS" category="Development" stat="87.5K" />
+                <BlockTrends title="Vercel" category="Sport" stat="27.5K" />
+              </BlockWrap>
+              <BlockWrap title="Who to follow" href="/">   
+                <BlockItem name="Roy Quilor" username="royquilor" />
+                <BlockItem name="Roy Quilor" username="royquilor" />
+                <BlockItem name="Roy Quilor" username="royquilor" />
+              </BlockWrap>
+              <Footer />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
