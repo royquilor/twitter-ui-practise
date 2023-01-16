@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        default: ['var(--font-mona-sans)', ...fontFamily.sans],
         sans: ['var(--font-mona-sans)', ...fontFamily.sans],
       },
     },

@@ -1,5 +1,6 @@
 import '../styles/styles.css'
 import type { AppProps } from 'next/app'
+import localFont from '@next/font/local'
 import { Inter } from '@next/font/google'
 
 // const inter = Inter({
@@ -7,7 +8,6 @@ import { Inter } from '@next/font/google'
 //   // weight: ['400', '700'],
 // })
 
-import localFont from '@next/font/local'
 const myFont = localFont({
   src: '../../fonts/Mona-Sans.woff2',
   variable: '--font-mona-sans',

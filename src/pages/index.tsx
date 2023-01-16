@@ -23,6 +23,8 @@ import { HiOutlineUser } from "react-icons/hi2";
 import { HiOutlineEllipsisHorizontalCircle } from "react-icons/hi2";
 import { HiOutlinePencil } from "react-icons/hi2";
 import { SiTwitter } from "react-icons/si";
+import React from 'react';
+import * as Popover from '@radix-ui/react-popover';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -63,6 +65,23 @@ export default function Home() {
           <NavItem href="/" text="More">
             <HiOutlineEllipsisHorizontalCircle className="w-6 h-6" />
               </NavItem>
+                              <Popover.Root>
+    <Popover.Trigger className="PopoverTrigger">Show info</Popover.Trigger>
+    <Popover.Portal className="font-sans">
+      <Popover.Content className="w-[320px] bg-white rounded-xl border border-slate-200 shadow-2xl">
+          <NavItem href="/" text="Explore">
+            <HiHashtag className="w-6 h-6" />
+          </NavItem>             
+          <NavItem href="/" text="Lists">
+            <HiHashtag className="w-6 h-6" />
+          </NavItem>             
+          <NavItem href="/" text="Twitter Circle">
+            <HiHashtag className="w-6 h-6" />
+          </NavItem>             
+        <Popover.Arrow className="PopoverArrow" />
+      </Popover.Content>
+    </Popover.Portal>
+  </Popover.Root>
             <div className="mt-5 flex justify-center xl:justify-start"> 
                 <button className="bg-slate-900 font-semibold text-white px-3 xl:px-20 py-3 text-lg rounded-full">
                   <HiOutlinePencil className="w-6 h-6 xl:hidden" />
