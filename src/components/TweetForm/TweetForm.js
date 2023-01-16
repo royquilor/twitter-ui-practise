@@ -1,5 +1,6 @@
 import Avatar from "../Avatar"
 import Link from "next/link";
+import { Button } from "../Button/Button";
 import { RiImage2Line } from "react-icons/ri";
 import { RiFileGifLine } from "react-icons/ri";
 import { RiChatPollLine } from "react-icons/ri";
@@ -13,7 +14,7 @@ const TweetForm = () => {
       <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" />
       <form className="flex flex-col flex-1 gap-y-4">
         <div className="flex flex-1">
-          <input type="textarea" placeholder="What's up?" className="w-full px-4 py-3 text-xl border-slate-200 placeholder:text-slate-600 xrounded-full" />
+          <input type="textarea" placeholder="What's up?" className="w-full px-4 py-3 text-xl border-slate-200 placeholder:text-slate-600" />
         </div>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-x-4 px-4">
@@ -39,7 +40,7 @@ const TweetForm = () => {
             </Link>
           </div>
           <div>
-            <button className="bg-slate-900 font-bold text-white px-4 py-2 text-sm rounded-full">Tweet</button>  
+            <Button href="/" text="Tweet" />
           </div>
         </div>
       </form>

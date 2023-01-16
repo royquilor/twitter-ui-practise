@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 
-const BlockWrap = ({title, href, children}) => {
+const Panel = ({title, href, children}) => {
   return (
      <div className="bg-slate-50 rounded-xl mb-3">
         <div className="px-4 py-4">   
@@ -17,4 +17,4 @@ const BlockWrap = ({title, href, children}) => {
   )
 }
 
-export default BlockWrap
+export default Panel

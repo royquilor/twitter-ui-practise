@@ -1,9 +1,10 @@
 import Avatar from "../Avatar"
 import Link from "next/link";
+import { Button } from "../Button/Button";
 
 // import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 
-const BlockItem = ({name, username}) => {
+const PanelItem = ({name, username}) => {
   return (
     <div className="flex flex-1 items-center gap-x-2 px-4 py-3 hover:bg-slate-200">
       <div className="flex items-center gap-x-2 flex-1">
@@ -16,12 +17,10 @@ const BlockItem = ({name, username}) => {
         </div>
       </div>  
       <div className="">
-        <Link className="bg-slate-900 font-bold text-white px-4 py-2 text-sm rounded-full" href="/">
-          Follow
-        </Link>
+        <Button href="/" text="Follow" size="small" />
       </div>  
     </div>
   )
 }
 
-export default BlockItem
+export default PanelItem

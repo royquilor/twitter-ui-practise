@@ -2,7 +2,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 
 const Search = () => {
   return (
-    <div className="sticky top-0 bg-white flex flex-1 py-2 mb-3">
+    <div className="sticky top-0 bg-white xflex xflex-1 py-2 mb-3">
       <form className="flex flex-col flex-1 gap-y-4">
         <div className="flex flex-1 relative">
           <HiMagnifyingGlass className="w-5 h-5 left-2.5 top-2 h-full absolute flex items-center xbg-red-200" />

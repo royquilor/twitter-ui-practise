@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 // import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 
-const BlockTrends = ({category, title, stat}) => {
+const PanelItemTrends = ({category, title, stat}) => {
   return (
     <div className="flex flex-1 items-center gap-x-2 px-4 py-3 hover:bg-slate-200">
       <div className="flex flex-col gap-y-1 gap-x-2 flex-1">
@@ -19,4 +19,4 @@ const BlockTrends = ({category, title, stat}) => {
   )
 }
 
-export default BlockTrends
+export default PanelItemTrends
