@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-mona-sans: 'Mona Sans'
+}
+
 body {
   @apply bg-white text-gray-900 antialiased;
 }
 
-   
-        
+
+           

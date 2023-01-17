@@ -3,10 +3,18 @@ import type { AppProps } from 'next/app'
 import localFont from '@next/font/local'
 import { Inter } from '@next/font/google'
 
-// const inter = Inter({
-//   subsets: ['latin'],
-//   // weight: ['400', '700'],
-// })
+// @font-face {
+//   font-family: 'Mona Sans';
+//   src:
+//     url('../fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+//     url('../fonts/Mona-Sans.woff2') format('woff2-variations');
+//   font-weight: 200 900;
+//   font-stretch: 75% 125%;
+// }
+
+// :root {
+//   --font-mona-sans: 'Mona Sans'
+// }
 
 const myFont = localFont({
   src: '../../fonts/Mona-Sans.woff2',
