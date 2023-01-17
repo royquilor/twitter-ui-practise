@@ -13,8 +13,11 @@ import { HiOutlineUser } from "react-icons/hi2";
 import { HiOutlineEllipsisHorizontalCircle } from "react-icons/hi2";
 import { HiOutlinePencil } from "react-icons/hi2";
 import { HiChevronDown } from "react-icons/hi2";
+import { HiChevronUp } from "react-icons/hi2";
+import * as Collapsible from '@radix-ui/react-collapsible';
 
 export default function Nav() {
+	const [open, setOpen] = useState(false);
 	const [openPopover, setOpenPopover] = useState(false);
   return (
      	<header className="hidden sm:flex w-24 xl:col-span-2">
@@ -49,12 +52,22 @@ export default function Nav() {
 						content={
           <div className="w-full rounded-md bg-white p-2 sm:w-40">
 						<NavItem href="/" text="title" width="inline" size="default" />
-            <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-              Item 2
-            </button>
-            <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-              Item 3
-            </button>
+            <Collapsible.Root className="CollapsibleRoot" open={open} onOpenChange={setOpen}>
+      <div>
+        <span className="">
+          Item 1
+        </span>
+        <Collapsible.Trigger asChild>
+          <button className="IconButton">{open ? <HiChevronDown /> : <HiChevronUp />}</button>
+        </Collapsible.Trigger>
+      </div>
+
+      <Collapsible.Content>
+        <div className="Repository">
+          <span className="Text">@radix-ui/colors</span>
+        </div>
+      </Collapsible.Content>
+    </Collapsible.Root>
           </div>
         }
         openPopover={openPopover}
