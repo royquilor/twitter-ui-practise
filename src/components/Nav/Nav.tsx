@@ -1,5 +1,5 @@
 import Link from "next/link"
-import NavItem from "../NavItem/NavItem";
+import { NavItem } from "../NavItem/NavItem";
 import { SiTwitter } from "react-icons/si";
 import AccountNavItem from "../AccountNavItem";
 import Popover from "../Popover/Popover";
@@ -17,40 +17,38 @@ import { HiChevronDown } from "react-icons/hi2";
 export default function Nav() {
 	const [openPopover, setOpenPopover] = useState(false);
   return (
-     <header className="hidden sm:flex w-24 xl:col-span-2">
-          <div className="flex flex-1 xl:w-60 flex-col fixed h-full">
-            <div className="flex flex-col flex-1 ">
-          <NavItem href="/" text="">
+     	<header className="hidden sm:flex w-24 xl:col-span-2">
+      <div className="flex flex-1 xl:w-60 flex-col fixed h-full">
+          <div className="flex flex-col flex-1 ">
+          <NavItem href="/" text="" width="inline" size="default">
             <SiTwitter className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="Home">
+          <NavItem href="/" text="Home" width="inline" size="default">
             <HiOutlineHome className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="Explore">
+          <NavItem href="/" text="Explore" width="inline" size="default">
             <HiHashtag className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="Notifications">
+          <NavItem href="/" text="Notifications" width="inline" size="default">
             <HiOutlineBell className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="Messages">
+          <NavItem href="/" text="Messages" width="inline" size="default">
             <HiOutlineEnvelope className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="Bookmarks">
+          <NavItem href="/" text="Bookmarks" width="inline" size="default">
             <HiOutlineBookmark className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="Profile">
+          <NavItem href="/" text="Profile" width="inline" size="default">
             <HiOutlineUser className="w-6 h-6" />
           </NavItem>
-          <NavItem href="/" text="More">
+          <NavItem href="/" text="More" width="inline" size="default">
             <HiOutlineEllipsisHorizontalCircle className="w-6 h-6" />
               </NavItem>
             
               <Popover
-        content={
+						content={
           <div className="w-full rounded-md bg-white p-2 sm:w-40">
-            <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
-              Item 1
-            </button>
+						<NavItem href="/" text="title" width="inline" size="default" />
             <button className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100 active:bg-gray-200">
               Item 2
             </button>

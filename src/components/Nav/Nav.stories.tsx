@@ -1,5 +1,4 @@
-
-import { Nav } from "./Nav/Nav";
+import Nav from "./Nav";
 
 export default { 
   title: 'Components/Nav',
@@ -7,7 +6,9 @@ export default {
 };
 
 const Template = () => (
-  <Nav />
+  <Nav>
+    Example
+  </Nav>
 );
 
 export const Default = Template.bind({});

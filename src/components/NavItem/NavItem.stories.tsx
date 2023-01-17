@@ -1,5 +1,5 @@
 
-import NavItem from './NavItem';
+import { NavItem } from './NavItem';
 
 export default { 
   title: 'Components/NavItem',
@@ -10,6 +10,8 @@ const Template = () => (
     <NavItem
       text="text"
       href="/"
+      width=""
+      size=""
     >Example</NavItem>
 );
 
