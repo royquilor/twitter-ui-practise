@@ -27,7 +27,7 @@ export default function Home() {
         <ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
           <li className="p-4">
             <Post name="Roy Quilor" username="royquilor" content="Create design and build templates" date="3/1/2023">
-              <div className="w-full relative h-80 xaspect-square mb-4">
+              <div className="w-full relative -z-10 h-80 xaspect-square mb-4">
               <Image
                 fill={true}
                 style={{objectFit:"cover"}}

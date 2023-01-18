@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Popover/Popover.tsx", "src/components/Popover/Popover.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Popover/Popover.tsx", "src/components/Popover/Popover.tsx", "src/components/NavItem/NavItem.js"],
   "exclude": ["node_modules"]
 }

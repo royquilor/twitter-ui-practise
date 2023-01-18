@@ -7,10 +7,26 @@ import { RiChatPollLine } from "react-icons/ri";
 import { RiEmotionLine } from "react-icons/ri";
 import { RiMapPin2Line } from "react-icons/ri";
 
+import { cva } from 'class-variance-authority';
 
-const TweetForm = () => {
+const TweetFormStyles = cva(
+	'flex flex-1 gap-x-2',
+	{
+		variants: {
+      width: {
+        default: 'p-4 border-b border-slate-200',
+				full: '',
+			},
+		},
+		defaultVariants: {
+			width: 'default',
+		},
+	},
+);
+
+const TweetForm = ({width}) => {
   return (
-    <div className="flex flex-1 gap-x-2 p-4 border-b border-slate-200">
+    <div className={TweetFormStyles({width})}>
       <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" />
       <form className="flex flex-col flex-1 gap-y-4">
         <div className="flex flex-1">

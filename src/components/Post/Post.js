@@ -6,17 +6,20 @@ import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2'
 import { HiOutlineArrowPath } from 'react-icons/hi2'
 import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 import { HiOutlineChartBarSquare } from "react-icons/hi2";
+import DropdownMenuDemo from "../DropdownMenu/DropdownMenu";
+import HoverCardDemo from "../HoverCard/HoverCard";
 
 const Post = ({ content, name, username, date, children }) => {
   return (
     <div className="flex flex-1 gap-x-4">
       <div className="flex-shrink-0">
-      <Image
+        <HoverCardDemo />
+      {/* <Image
           width={48}
           height={48}
           className="rounded-full"
           src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg"
-          alt={`Headshot of ${name}`} />  
+          alt={`Headshot of ${name}`} />   */}
       </div>
       <div className="flex flex-col flex-1">
         <div className="flex flex-1">
@@ -26,9 +29,7 @@ const Post = ({ content, name, username, date, children }) => {
             <span className="text-slate-600">{date}</span>
           </div>
           <div className="">
-            <Link href="/">
-              <HiOutlineEllipsisHorizontal className="w-6 h-6" />
-            </Link>
+            <DropdownMenuDemo />
           </div> 
         </div>
         <div className="text-sm text-slate-900 font-medium mb-4">

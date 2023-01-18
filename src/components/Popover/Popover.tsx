@@ -51,15 +51,15 @@ export default function Popover({children, content}) {
           {children}
         </PopoverPrimitive.Trigger>
         <PopoverPrimitive.Content
-          align="center"
-          sideOffset={4}
-          className="w-48 rounded-lg shadow-lg border border-slate-200 md:w-56 bg-white dark:bg-gray-800"
+          align="start"
+          side="top"
+          sideOffset={-60}
+          alignOffset={0}
+          className="w-80 rounded-xl shadow-xl border border-slate-200 bg-white dark:bg-gray-800"
         >
-           {content}
-          <PopoverPrimitive.Arrow className="fill-current text-white dark:text-gray-800" />
-                   
-
-
+          {content}
+          {/* <PopoverPrimitive.Arrow className="fill-current text-white dark:text-gray-800" /> */}
+                  
           {/* <PopoverPrimitive.Close
             className="absolute top-3.5 right-3.5 inline-flex items-center justify-center rounded-full p-1 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
           >

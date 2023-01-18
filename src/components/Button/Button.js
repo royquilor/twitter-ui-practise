@@ -2,17 +2,17 @@ import { cva, VariantProps } from 'class-variance-authority';
 import Link from "next/link"
 
 const ButtonStyles = cva(
-	'font-bold text-white rounded-full',
+	'inline-flex items-center font-bold rounded-full border ',
 	{
 		variants: {
       intent: {
-        primary: 'bg-slate-900',
+        primary: 'bg-slate-900 text-white border-transparent',
 				plain: '',
-				light: '',
+				outline: 'bg-transparent text-slate-900 border-slate-200',
 			},
 			size: {
-        default: 'px-4 py-3 text-sm',
-				small: 'px-4 py-2 text-sm',
+        default: 'px-4 py-2 text-sm',
+				small: 'px-4 py-1 text-sm',
 				large: '',
 			},
 		},
