@@ -78,12 +78,12 @@ const items: AccordionItem[] = [
 						Display
 					</div>
 				</NavItem>
-				<NavItem href="/" width="full" size="default">
+				{/* <NavItem href="/" width="full" size="default">
 					<HiOutlineBolt className="w-4 h-4" />
 					<div className="inline-flex flex-none text-sm font-medium">
 						Keyboard shortcuts
 					</div>
-				</NavItem>
+				</NavItem> */}
 			</>
 		),
 	},
@@ -104,7 +104,7 @@ export default function Accordion(props: Props) {
 						<AccordionPrimitive.Header className="w-full">
 							<AccordionPrimitive.Trigger
 								className={cx(
-									'group',
+									'AccordionTrigger group',
 									'radix-state-open:rounded-t-lg radix-state-closed:rounded-lg',
 									'focus:outline-none hover:bg-slate-100',
 									'inline-flex w-full items-center justify-between bg-white px-4 py-4 text-left dark:bg-gray-800',
@@ -116,12 +116,12 @@ export default function Accordion(props: Props) {
 								<HiChevronDown
 									className={cx(
 										'ml-2 h-5 w-5 shrink-0 text-gray-700 ease-in-out dark:text-gray-400',
-										'group-radix-state-open:rotate-180 group-radix-state-open:duration-300',
+										'AccordionChevron xgroup-radix-state-open:rotate-180 xgroup-radix-state-open:duration-300',
 									)}
 								/>
 							</AccordionPrimitive.Trigger>
 						</AccordionPrimitive.Header>
-						<AccordionPrimitive.Content className="w-full dark:bg-gray-800">
+						<AccordionPrimitive.Content className="AccordionContent w-full dark:bg-gray-800">
 							{content}
 						</AccordionPrimitive.Content>
 					</AccordionPrimitive.Item>

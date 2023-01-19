@@ -26,7 +26,7 @@ const HoverCardDemo = ({ src, alt, initials }: Props) => (
 				align="center"
 				sideOffset={4}
 				className={cx(
-					'radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
+					'HoverCardContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
 					'w-72 rounded-lg p-4 xmd:w-full',
 					'bg-white dark:bg-gray-800 border border-slate-200 shadow-xl',
 					'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',

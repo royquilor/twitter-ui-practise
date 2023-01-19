@@ -94,7 +94,7 @@ const DropdownMenuDemo = () => {
 					alignOffset={0}
 					align="end"
 					className={cx(
-						'radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
+						'DropdownMenuContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
 						'rounded-lg shadow-2xl w-72',
 						'bg-white dark:bg-gray-800 border border-slate-200',
 					)}
