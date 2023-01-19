@@ -1,9 +1,15 @@
-import * as HoverCard from '@radix-ui/react-hover-card'
-import cx from 'classnames'
-import { Button } from '../Button/Button'
-import Avatar from "../Avatar/Avatar"
+import * as HoverCard from "@radix-ui/react-hover-card";
+import cx from "classnames";
+import { Button } from "../Button/Button";
+import Avatar from "../Avatar/Avatar";
 
-const HoverCardDemo = () => (
+interface Props {
+  src: string;
+  alt: string;
+  initials: string;
+}
+
+const HoverCardDemo = ({ src, alt, initials }: Props) => (
   <HoverCard.Root>
     <HoverCard.Trigger asChild>
       <a
@@ -12,7 +18,7 @@ const HoverCardDemo = () => (
         target="_blank"
         rel="noreferrer noopener"
       >
-        <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" />
+        <Avatar src={src} alt={alt} initials={initials} />
       </a>
     </HoverCard.Trigger>
     <HoverCard.Portal>
@@ -28,31 +34,38 @@ const HoverCardDemo = () => (
       >
         <div className="w-full flex flex-col gap-y-3">
           <div className="flex justify-between items-start">
-            <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" />
+            <Avatar src={src} alt={alt} initials={initials} />
             <div>
-              <Button intent="outline" size="default">Following</Button>
-            </div>  
-          </div>  
+              <Button intent="outline" size="default">
+                Following
+              </Button>
+            </div>
+          </div>
           <div>
-            <div className="text-base font-semibold leading-none">Roy Quilor</div>
+            <div className="text-base font-semibold leading-none">
+              Roy Quilor
+            </div>
             <div className="text-sm text-slate-500">@royquilor</div>
           </div>
           <div className="text-sm">
-            Improve your design skills by making projects. 1 every week, practice with me on Youtube. I use Figma, Tailwind CSS and Webflow.
+            Improve your design skills by making projects. 1 every week,
+            practice with me on Youtube. I use Figma, Tailwind CSS and Webflow.
           </div>
           <div className="flex gap-x-4">
             <div className="flex gap-x-1">
               <div className="text-sm font-bold leading-none">249</div>
-              <div className="text-sm text-slate-500 leading-none">Following</div>
+              <div className="text-sm text-slate-500 leading-none">
+                Following
+              </div>
             </div>
             <div className="flex gap-x-1">
               <div className="text-sm font-bold leading-none">663</div>
-              <div className="text-sm text-slate-500 leading-none">Followers</div>
+              <div className="text-sm text-slate-500 leading-none">
+                Followers
+              </div>
             </div>
           </div>
         </div>
-
-        {/* <HoverCard.Arrow className="HoverCardArrow" /> */}
       </HoverCard.Content>
     </HoverCard.Portal>
   </HoverCard.Root>

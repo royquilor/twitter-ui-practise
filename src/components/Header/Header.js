@@ -1,9 +1,3 @@
-import Link from "next/link"
-import { HiOutlineSparkles } from "react-icons/hi2";
-// import TabList from "../TabList/TabList";
-// import TabsDemo from "../TabsDemo/TabsDemo";
-// import { Text } from "../Text";
-
 const Header = ({ title }) => {
   return (
     <div className="sticky bg-white/75 z-10 backdrop-blur-md top-0">
@@ -13,8 +7,8 @@ const Header = ({ title }) => {
           <h2 className="text-lg font-bold">{title}</h2>
         </div>
       </div>
-    </div>  
-)
-}
+    </div>
+  );
+};
 
-export default Header
+export default Header;

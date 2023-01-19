@@ -1,14 +1,10 @@
-import AccountNavItem from './AccountNavItem';
+import AccountNavItem from "./AccountNavItem";
 
-export default { 
-  title: 'Components/AccountNavItem',
+export default {
+  title: "Components/AccountNavItem",
   component: AccountNavItem,
 };
 
-const Template = () => (
-  <AccountNavItem />
-);
+const Template = () => <AccountNavItem />;
 
 export const Default = Template.bind({});
-
-

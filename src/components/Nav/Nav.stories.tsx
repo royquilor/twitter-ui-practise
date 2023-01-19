@@ -1,14 +1,10 @@
 import Nav from "./Nav";
 
-export default { 
-  title: 'Components/Nav',
+export default {
+  title: "Components/Nav",
   component: Nav,
 };
 
-const Template = () => (
-  <Nav />
-);
+const Template = () => <Nav />;
 
 export const Default = Template.bind({});
-
-

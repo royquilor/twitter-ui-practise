@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Tab } from "../Tab/Tab"
+import Link from "next/link";
+import { Tab } from "../Tab/Tab";
 
 const TabList = () => {
   return (
@@ -8,7 +8,7 @@ const TabList = () => {
       <Tab text="Following" href="/" />
       <Tab text="Niche" href="/" />
     </div>
-  )
-}
+  );
+};
 
-export default TabList
+export default TabList;

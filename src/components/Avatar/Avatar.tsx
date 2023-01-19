@@ -1,16 +1,27 @@
-import Image from "next/image"
+import * as Avatar from "@radix-ui/react-avatar";
 
-const Avatar = ({ src, alt } : {src:string, alt:string}) => {
-  return (
-    <div className="flex-shrink-0">
-      <Image
-          width={48}
-          height={48}
-          className="rounded-full"
-          src={src}
-          alt={`Headshot of ${alt}`} />  
-    </div>
-  )
-}
+const AvatarDemo = ({
+  src,
+  alt,
+  initials,
+}: {
+  src: string;
+  alt: string;
+  initials: string;
+}) => (
+  <Avatar.Root className="AvatarRoot inline-flex items-center justify-center overflow-hidden w-12 h-12 rounded-full bg-slate-100">
+    <Avatar.Image
+      className="AvatarImage w-100 h-100 object-cover"
+      src={src}
+      alt={alt}
+    />
+    <Avatar.Fallback
+      className="AvatarFallback w-100 h-100 flex items-center justify-center  text-base leading-none font-semibold"
+      delayMs={600}
+    >
+      {initials}
+    </Avatar.Fallback>
+  </Avatar.Root>
+);
 
-export default Avatar
+export default AvatarDemo;

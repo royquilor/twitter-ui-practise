@@ -1,21 +1,18 @@
-import { cva } from 'class-variance-authority';
-import Link from "next/link"
+import { cva } from "class-variance-authority";
+import Link from "next/link";
 
-const tabStyles = cva(
-	'flex px-6 hover:bg-slate-100',
-	{
-		variants: {
-      intent: {
-        default: 'text-slate-500',
-				active: 'text-slate-900 [&_div:last-child]:flex',
-				secondary: '',
-			},
-		},
-		defaultVariants: {
-			intent: 'default',
-		},
-	},
-);
+const tabStyles = cva("flex px-6 hover:bg-slate-100", {
+  variants: {
+    intent: {
+      default: "text-slate-500",
+      active: "text-slate-900 [&_div:last-child]:flex",
+      secondary: "",
+    },
+  },
+  defaultVariants: {
+    intent: "default",
+  },
+});
 
 export function Tab({ text, href, intent }) {
   return (

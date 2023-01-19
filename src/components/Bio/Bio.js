@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const Bio = ({ avatar, name, tagline, role }) => {
   return (
@@ -9,7 +9,8 @@ const Bio = ({ avatar, name, tagline, role }) => {
           height={96}
           className="h-24 w-24 rounded-full"
           src={avatar}
-          alt={`Headshot of ${name}`} />  
+          alt={`Headshot of ${name}`}
+        />
       </div>
       <div className="flex flex-col justify-center">
         <div>
@@ -19,7 +20,7 @@ const Bio = ({ avatar, name, tagline, role }) => {
         <div className="text-sm text-slate-500">{role}</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

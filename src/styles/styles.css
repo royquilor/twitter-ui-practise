@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --font-mona-sans: 'Mona Sans'
+  --font-mona-sans: "Mona Sans";
 }
 
 body {
   @apply bg-white text-gray-900 antialiased;
-}    
+}
 
-.TabsTrigger[data-state='active'] {
+.TabsTrigger[data-state="active"] {
   @apply text-slate-900;
 }
-.TabsTrigger[data-state='active'] span {
+.TabsTrigger[data-state="active"] span {
   @apply bg-slate-900;
 }

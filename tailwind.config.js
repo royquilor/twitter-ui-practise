@@ -1,18 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme')
-// const { join } = require('path');
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  // content: [
-  //   "./src/pages/**/*.{js,ts,jsx,tsx}",
-  //   "./src/components/**/*.{js,ts,jsx,tsx}",
-  // ],
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        default: ['var(--font-mona-sans)', ...fontFamily.sans],
-        sans: ['var(--font-mona-sans)', ...fontFamily.sans],
+        default: ["var(--font-mona-sans)", ...fontFamily.sans],
+        sans: ["var(--font-mona-sans)", ...fontFamily.sans],
       },
     },
   },
@@ -20,8 +15,8 @@ module.exports = {
     aspectRatio: false,
   },
   plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
   ],
-}
+};

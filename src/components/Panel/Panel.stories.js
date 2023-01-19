@@ -1,14 +1,10 @@
-import Panel from './Panel';
+import Panel from "./Panel";
 
-export default { 
-  title: 'Components/Panel',
+export default {
+  title: "Components/Panel",
   component: Panel,
 };
 
-const Template = () => (
-  <Panel />
-);
+const Template = () => <Panel />;
 
 export const Default = Template.bind({});
-
-

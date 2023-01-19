@@ -1,27 +1,24 @@
-import { cva, VariantProps } from 'class-variance-authority';
-import Link from "next/link"
+import { cva, VariantProps } from "class-variance-authority";
+import Link from "next/link";
 
-const NavItemStyles = cva(
-	'items-center gap-x-4 text-slate-900 my-1',
-	{
-		variants: {
-      width: {
-        full: 'w-full',
-				inline: 'inline-flex [&_div:first-child]:rounded-full',
-				mobile: 'inline-flex justify-center xl:justify-start '
-			},
-			size: {
-        default: '',
-				small: 'py-0 [&_div:last-child]:text-sm my-0',
-				large: '',
-			},
-		},
-		defaultVariants: {
-			width: 'inline',
-			size: 'default'
-		},
-	},
-);
+const NavItemStyles = cva("items-center gap-x-4 text-slate-900 my-1", {
+  variants: {
+    width: {
+      full: "w-full",
+      inline: "inline-flex [&_div:first-child]:rounded-full",
+      mobile: "inline-flex justify-center xl:justify-start ",
+    },
+    size: {
+      default: "",
+      small: "py-0 [&_div:last-child]:text-sm my-0",
+      large: "",
+    },
+  },
+  defaultVariants: {
+    width: "inline",
+    size: "default",
+  },
+});
 
 export function NavItem({ href, children, width, size }) {
   return (

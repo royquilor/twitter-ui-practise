@@ -1,14 +1,10 @@
-import PanelItem from './PanelItem';
+import PanelItem from "./PanelItem";
 
-export default { 
-  title: 'Components/PanelItem',
+export default {
+  title: "Components/PanelItem",
   component: PanelItem,
 };
 
-const Template = () => (
-  <PanelItem />
-);
+const Template = () => <PanelItem />;
 
 export const Default = Template.bind({});
-
-
