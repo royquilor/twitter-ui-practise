@@ -6,7 +6,7 @@ const TabList = () => {
     <div className="flex border-b border-slate-200">
       <Tab intent="active" text="For you" href="/" />
       <Tab text="Following" href="/" />
-      <Tab text="Niche it" href="/" />
+      <Tab text="Niche" href="/" />
     </div>
   )
 }

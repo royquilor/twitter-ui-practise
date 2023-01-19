@@ -9,6 +9,7 @@ const ButtonStyles = cva(
         primary: 'bg-slate-900 text-white border-transparent',
 				plain: '',
 				outline: 'bg-transparent text-slate-900 border-slate-200',
+				disabled: 'bg-slate-900 text-white border-transparent opacity-50 cursor-default'
 			},
 			size: {
         default: 'px-4 py-2 text-sm',

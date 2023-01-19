@@ -1,14 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Post from '../components/Post'
 import Nav from '../components/Nav/Nav'
-import HeaderBlock from '../components/HeaderBlock/HeaderBlock'
-import TweetForm from '../components/TweetForm'
+import Header from '../components/Header/Header'
 import Search from '../components/Search'
 import PanelItem from '../components/PanelItem'
 import Panel from '../components/Panel'
 import PanelItemTrends from '../components/PanelItemTrends'
 import Footer from '../components/Footer'
+import Tabs from '../components/Tabs/Tabs'
 
 export default function Home() {
   return (
@@ -19,48 +17,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen flex xflex-col max-w-7xl mx-auto xl:grid xl:grid-cols-10 gap-5">
+      <div className="min-h-screen flex max-w-7xl mx-auto xl:grid xl:grid-cols-10 gap-5">
         <Nav />
-        <main className="col-span-5 xmax-w-[600px] w-full border-x border-slate-200">
-          <HeaderBlock title="Home" href="/" text="Top tweets" />
-          <TweetForm />
-        <ul className="[&_p:last-child]:text-slate-500 [&_p:first-child]:text-lg divide-y divide-slate-200">
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Create design and build templates" date="3/1/2023">
-              <div className="w-full relative -z-10 h-80 xaspect-square mb-4">
-              <Image
-                fill={true}
-                style={{objectFit:"cover"}}
-                className="rounded-3xl"
-                src="https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80"
-                alt="Gradient" />  
-              </div>
-            </Post>  
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="I love Figma" date="2/1/2023">&nbsp;</Post>
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Tailwind CSS is insane" date="1/1/2023">&nbsp;</Post>
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Next JS documentation is so good" date="1/1/2023">&nbsp;</Post>
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="How to use custom fonts with Storybook" date="1/1/2023">&nbsp;</Post>
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Why use Storybook?" date="1/1/2023">&nbsp;</Post>
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Vercel and Neflify are pretty cool" date="1/1/2023">&nbsp;</Post>
-          </li>
-          <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Webflow community is awesome" date="1/1/2023">&nbsp;</Post>
-          </li>
-        </ul>
+        <main className="col-span-5 w-full border-x border-slate-200">
+          <Header title="Home" href="/" />
+          <Tabs />
         </main>
-        <aside className="xbg-red-200 col-span-3 hidden xl:flex flex-col w-[350px]">
+        <aside className="col-span-3 hidden xl:flex flex-col w-[350px]">
           <div className="sticky top-0">
             <Search />
             <Panel title="What's happening" href="/">   

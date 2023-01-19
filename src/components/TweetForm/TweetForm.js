@@ -56,7 +56,7 @@ const TweetForm = ({width}) => {
             </Link>
           </div>
           <div>
-            <Button href="/" text="Tweet" />
+            <Button href="/" text="Tweet" intent="disabled" />
           </div>
         </div>
       </form>

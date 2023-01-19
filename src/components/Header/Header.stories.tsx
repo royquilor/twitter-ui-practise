@@ -1,13 +1,13 @@
 
-import HeaderBlock from './HeaderBlock';
+import Header from './Header';
 
 export default { 
-  title: 'Components/HeaderBlock',
-  component: HeaderBlock,
+  title: 'Components/Header',
+  component: Header,
 };
 
 const Template = () => (
-    <HeaderBlock
+    <Header
       title="home"
       href="/"
       text="Top tweets"  
