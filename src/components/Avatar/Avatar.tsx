@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-const Avatar = ({ src, alt }) => {
+const Avatar = ({ src, alt } : {src:string, alt:string}) => {
   return (
     <div className="flex-shrink-0">
       <Image

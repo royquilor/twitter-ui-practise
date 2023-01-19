@@ -1,4 +1,4 @@
-import Avatar from "../Avatar"
+import Avatar  from "../Avatar/Avatar"
 import Link from "next/link";
 import { Button } from "../Button/Button";
 import { RiImage2Line } from "react-icons/ri";
@@ -56,7 +56,7 @@ const TweetForm = ({width}) => {
             </Link>
           </div>
           <div>
-            <Button href="/" text="Tweet" intent="disabled" />
+            <Button intent="disabled">Tweet</Button>
           </div>
         </div>
       </form>

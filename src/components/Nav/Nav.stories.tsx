@@ -6,9 +6,7 @@ export default {
 };
 
 const Template = () => (
-  <Nav>
-    Example
-  </Nav>
+  <Nav />
 );
 
 export const Default = Template.bind({});

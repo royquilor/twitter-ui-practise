@@ -1,7 +1,7 @@
 import * as HoverCard from '@radix-ui/react-hover-card'
 import cx from 'classnames'
 import { Button } from '../Button/Button'
-import Avatar from '../Avatar'
+import Avatar from "../Avatar/Avatar"
 
 const HoverCardDemo = () => (
   <HoverCard.Root>
@@ -34,7 +34,7 @@ const HoverCardDemo = () => (
           <div className="flex justify-between items-start">
             <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" />
             <div>
-              <Button text="Following" href="/" intent="outline" size="default" />
+              <Button intent="outline" size="default">Following</Button>
             </div>  
           </div>  
           <div>
@@ -42,7 +42,7 @@ const HoverCardDemo = () => (
             <div className="text-sm text-slate-500">@royquilor</div>
           </div>
           <div className="text-sm">
-            Improve your design skills by making projects. 1 every week, practise with me on Youtube. I use Figma, Tailwind CSS and Webflow.
+            Improve your design skills by making projects. 1 every week, practice with me on Youtube. I use Figma, Tailwind CSS and Webflow.
           </div>
           <div className="flex gap-x-4">
             <div className="flex gap-x-1">

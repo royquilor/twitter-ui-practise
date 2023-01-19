@@ -1,4 +1,3 @@
-import Avatar from "../Avatar"
 import Link from "next/link";
 
 // import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";

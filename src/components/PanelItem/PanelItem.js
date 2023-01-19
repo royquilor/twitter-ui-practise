@@ -1,8 +1,5 @@
-import Avatar from "../Avatar"
-import Link from "next/link";
+import Avatar  from "../Avatar/Avatar"
 import { Button } from "../Button/Button";
-
-// import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 
 const PanelItem = ({name, username}) => {
   return (
@@ -17,7 +14,7 @@ const PanelItem = ({name, username}) => {
         </div>
       </div>  
       <div className="">
-        <Button href="/" text="Follow" size="small" />
+        <Button size="small">Follow</Button>
       </div>  
     </div>
   )

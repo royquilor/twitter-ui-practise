@@ -1,8 +1,6 @@
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { HiChevronDown } from "react-icons/hi2";
-import { HiOutlineNewspaper } from "react-icons/hi2";
 import { HiOutlineChartBarSquare } from "react-icons/hi2";
-import { HiOutlineBookmark } from "react-icons/hi2";
 import { HiOutlineIdentification } from "react-icons/hi2";
 import { HiOutlineFilm } from "react-icons/hi2";
 import { HiOutlineBanknotes } from "react-icons/hi2";
@@ -97,7 +95,7 @@ export default function Accordion(props: Props) {
                 "inline-flex w-full items-center justify-between bg-white px-4 py-4 text-left dark:bg-gray-800"
               )}
             >
-              <span className="text-sm font-medium text-gray-900 dark:text-gray-100 font-bold">
+              <span className="text-sm text-gray-900 dark:text-gray-100 font-bold">
                 {header}
               </span>
               <HiChevronDown

@@ -6,7 +6,7 @@ import Feed from '../Feed/Feed';
 const Tabs = () => (
   <div>
   <TabsPrimitive.Root className="TabsRoot" defaultValue="tab1">
-    <TabsPrimitive.List className="TabsList " aria-label="Manage your account" className="flex w-full bg-white dark:bg-gray-800 border-b border-b-slate-200">
+    <TabsPrimitive.List className="TabsList flex w-full bg-white dark:bg-gray-800 border-b border-b-slate-200" aria-label="Manage your account">
       <TabsPrimitive.Trigger
         value="tab1"
         className={cx(
@@ -54,20 +54,20 @@ const Tabs = () => (
       </TabsPrimitive.Trigger>
     </TabsPrimitive.List>
     <TabsPrimitive.Content 
-       value="tab1"
+      value="tab1"
       className="TabsContent ">
-        <TweetForm />
+        <TweetForm width="" />
         <Feed />
     </TabsPrimitive.Content>
     <TabsPrimitive.Content 
-       value="tab2"
+      value="tab2"
       className="TabsContent ">
-        <TweetForm />
+        <TweetForm width="" />
     </TabsPrimitive.Content>
     <TabsPrimitive.Content 
-       value="tab3"
+      value="tab3"
       className="TabsContent ">
-        <TweetForm />
+        <TweetForm width="" />
     </TabsPrimitive.Content>
     </TabsPrimitive.Root>
   </div>  

@@ -8,9 +8,7 @@ export default {
 
 const Template = () => (
     <Header
-      title="home"
-      href="/"
-      text="Top tweets"  
+      title="home"  
     />
 );
 

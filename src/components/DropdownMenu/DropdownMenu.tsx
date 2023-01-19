@@ -86,7 +86,7 @@ const DropdownMenuDemo = () => {
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger asChild>
-        <button className="IconButton hover:bg-slate-200 rounded-full" aria-label="Customise options">
+        <button className="IconButton hover:bg-slate-200 rounded-full" aria-label="Customize options">
           <HiOutlineEllipsisHorizontal className="h-6 w-6" />
         </button>
       </DropdownMenu.Trigger>
@@ -105,7 +105,7 @@ const DropdownMenuDemo = () => {
           {items.map(({ href, text, width, size, icon }, i) => (
             <DropdownMenu.Item
               key={`header-${i}`}
-              value={`item-${i + 1}`}
+              // value={`item-${i + 1}`}
               className="rounded-lg focus:outline-none overflow-hidden"
             >
               <NavItem href="{href}" width={width} size={size}>

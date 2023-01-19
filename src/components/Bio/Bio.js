@@ -16,7 +16,7 @@ const Bio = ({ avatar, name, tagline, role }) => {
           <p className="text-lg font-semibold">{name}</p>
           <p className="text-base mb-1">{tagline}</p>
         </div>
-        <div className="text-sm text-sm text-slate-500">{role}</div>
+        <div className="text-sm text-slate-500">{role}</div>
       </div>
     </div>
   )

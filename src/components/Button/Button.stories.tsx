@@ -8,10 +8,9 @@ export default {
 
 const Template = () => (
   <Button
-    text="text"
-    intent="default"
-    href="/"
-  />
+    intent="primary"
+    size="default"
+  >Submit</Button>
 );
 
 export const Default = Template.bind({});

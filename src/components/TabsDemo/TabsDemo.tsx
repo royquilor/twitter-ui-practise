@@ -26,7 +26,7 @@ interface Props {}
 
 const TabsDemo = (props: Props) => (
   <Tabs.Root className="TabsRoot" defaultValue="tab1">
-    <Tabs.List className="TabsList" aria-label="Manage your account" className="flex w-full bg-white dark:bg-gray-800 border-b border-b-slate-200">
+    <Tabs.List className="TabsList flex w-full bg-white dark:bg-gray-800 border-b border-b-slate-200" aria-label="Manage your account">
       {tabs.map(({ title, value }) => (
       <Tabs.Trigger
         key={`tab-trigger-${value}`}
