@@ -1,8 +1,8 @@
-import PostForm from "./PostForm";
+import PostForm from './PostForm';
 
 export default {
-  title: "Components/PostForm",
-  component: PostForm,
+	title: 'Components/PostForm',
+	component: PostForm,
 };
 
 const Template = () => <PostForm />;

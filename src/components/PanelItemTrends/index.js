@@ -1,1 +1,1 @@
-export { default } from "./PanelItemTrends";
+export { default } from './PanelItemTrends';

@@ -1,8 +1,8 @@
-import PanelItem from "./PanelItem";
+import PanelItem from './PanelItem';
 
 export default {
-  title: "Components/PanelItem",
-  component: PanelItem,
+	title: 'Components/PanelItem',
+	component: PanelItem,
 };
 
 const Template = () => <PanelItem />;

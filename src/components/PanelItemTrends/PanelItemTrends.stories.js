@@ -1,8 +1,8 @@
-import PanelItemTrends from "./PanelItemTrends";
+import PanelItemTrends from './PanelItemTrends';
 
 export default {
-  title: "Components/PanelItemTrends",
-  component: PanelItemTrends,
+	title: 'Components/PanelItemTrends',
+	component: PanelItemTrends,
 };
 
 const Template = () => <PanelItemTrends />;

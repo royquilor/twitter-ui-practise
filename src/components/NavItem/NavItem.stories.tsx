@@ -1,14 +1,14 @@
-import { NavItem } from "./NavItem";
+import { NavItem } from './NavItem';
 
 export default {
-  title: "Components/NavItem",
-  component: NavItem,
+	title: 'Components/NavItem',
+	component: NavItem,
 };
 
 const Template = () => (
-  <NavItem href="/" width="" size="">
-    Example
-  </NavItem>
+	<NavItem href="/" width="" size="">
+		Example
+	</NavItem>
 );
 
 export const Default = Template.bind({});

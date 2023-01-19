@@ -1,8 +1,8 @@
-import Header from "./Header";
+import Header from './Header';
 
 export default {
-  title: "Components/Header",
-  component: Header,
+	title: 'Components/Header',
+	component: Header,
 };
 
 const Template = () => <Header title="home" />;

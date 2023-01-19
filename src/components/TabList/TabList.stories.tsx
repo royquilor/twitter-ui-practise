@@ -1,14 +1,10 @@
-import TabList from "./TabList";
+import TabList from './TabList';
 
 export default {
-  title: "Components/TabList",
-  component: TabList,
+	title: 'Components/TabList',
+	component: TabList,
 };
 
-const Template = () => (
-  <TabList text="text" href="/">
-    Tab
-  </TabList>
-);
+const Template = () => <TabList />;
 
 export const Default = Template.bind({});

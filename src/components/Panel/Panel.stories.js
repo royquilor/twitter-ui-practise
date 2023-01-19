@@ -1,8 +1,8 @@
-import Panel from "./Panel";
+import Panel from './Panel';
 
 export default {
-  title: "Components/Panel",
-  component: Panel,
+	title: 'Components/Panel',
+	component: Panel,
 };
 
 const Template = () => <Panel />;

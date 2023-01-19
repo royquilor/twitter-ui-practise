@@ -1,8 +1,8 @@
-import AccountNavItem from "./AccountNavItem";
+import AccountNavItem from './AccountNavItem';
 
 export default {
-  title: "Components/AccountNavItem",
-  component: AccountNavItem,
+	title: 'Components/AccountNavItem',
+	component: AccountNavItem,
 };
 
 const Template = () => <AccountNavItem />;

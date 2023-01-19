@@ -1,8 +1,8 @@
-import Footer from "./Footer";
+import Footer from './Footer';
 
 export default {
-  title: "Components/Footer",
-  component: Footer,
+	title: 'Components/Footer',
+	component: Footer,
 };
 
 const Template = () => <Footer />;
