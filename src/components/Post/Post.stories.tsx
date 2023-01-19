@@ -1,5 +1,5 @@
 
-import Post from './Post';
+import { Post } from './Post';
 
 export default { 
   title: 'Components/Post',

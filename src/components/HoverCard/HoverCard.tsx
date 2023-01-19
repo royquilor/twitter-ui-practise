@@ -12,11 +12,7 @@ const HoverCardDemo = () => (
         target="_blank"
         rel="noreferrer noopener"
       >
-        <img
-          className="Image normal"
-          src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg"
-          alt="Radix UI"
-        />
+        <Avatar src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg" alt="Roy Quilor" />
       </a>
     </HoverCard.Trigger>
     <HoverCard.Portal>

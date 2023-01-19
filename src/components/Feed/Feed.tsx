@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Post from "../Post"
+import { Post } from "../Post/Post"
 
 const Feed = () => {
   return (
@@ -17,25 +17,25 @@ const Feed = () => {
             </Post>  
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="I love Figma" date="2/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="I love Figma" date="2/1/2023" />
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Tailwind CSS is insane" date="1/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="Tailwind CSS is insane" date="1/1/2023" />
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Next JS documentation is so good" date="1/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="Next JS documentation is so good" date="1/1/2023" />
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="How to use custom fonts with Storybook" date="1/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="How to use custom fonts with Storybook" date="1/1/2023" />
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Why use Storybook?" date="1/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="Why use Storybook?" date="1/1/2023" />
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Vercel and Neflify are pretty cool" date="1/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="Vercel and Neflify are pretty cool" date="1/1/2023" />
           </li>
           <li className="p-4">
-            <Post name="Roy Quilor" username="royquilor" content="Webflow community is awesome" date="1/1/2023">&nbsp;</Post>
+            <Post name="Roy Quilor" username="royquilor" content="Webflow community is awesome" date="1/1/2023" />
           </li>
         </ul>
   )

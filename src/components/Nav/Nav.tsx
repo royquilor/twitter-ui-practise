@@ -1,22 +1,13 @@
-import Link from "next/link"
 import { NavItem } from "../NavItem/NavItem";
 import { SiTwitter } from "react-icons/si";
 import AccountNavItem from "../AccountNavItem";
-import Popover from "../Popover/Popover";
-import { useState } from "react";
 import { HiOutlineHome } from "react-icons/hi2";
 import { HiHashtag } from "react-icons/hi2";
 import { HiOutlineBell } from "react-icons/hi2";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { HiOutlineBookmark } from "react-icons/hi2";
 import { HiOutlineUser } from "react-icons/hi2";
-import { HiOutlineEllipsisHorizontalCircle } from "react-icons/hi2";
-import { HiOutlineChatBubbleBottomCenterText } from "react-icons/hi2";
-import { HiListBullet } from "react-icons/hi2";
-import { HiOutlineUserGroup } from "react-icons/hi2";
 import { ReactNode } from "react";
-import * as Separator from '@radix-ui/react-separator';
-import Accordion from "../Accordion/Accordion";
 import DialogDemo from "../Dialog/Dialog";
 import PopoverDemo from "../PopoverDemo/PopoverDemo";
 
@@ -60,8 +51,6 @@ const items: NavLinkItem[] = [
 ]
 
 export default function Nav() {
-	// const [open, setOpen] = useState(false);
-	const [openPopover, setOpenPopover] = useState(false);
   return (
      	<header className="hidden sm:flex w-24 xl:col-span-2">
       <div className="flex flex-1 xl:w-60 flex-col fixed h-full">

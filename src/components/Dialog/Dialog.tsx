@@ -2,15 +2,16 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { HiOutlineXMark } from "react-icons/hi2";
 import { HiOutlinePencil } from "react-icons/hi2";
 import TweetForm from '../TweetForm';
+import { Button } from '../Button/Button';
 
 const DialogDemo = () => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
       <div className="w-full flex justify-center xl:justify-start mt-5">
-      <button className="bg-slate-900 font-semibold text-white px-3 xl:px-20 py-3 text-lg rounded-full">
+      <Button size="large">
         <HiOutlinePencil className="w-6 h-6 xl:hidden" />
         <span className="hidden xl:flex">Tweet</span>
-        </button>
+      </Button>
       </div>  
     </Dialog.Trigger>
     <Dialog.Portal>

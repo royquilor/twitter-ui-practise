@@ -9,6 +9,7 @@ Plugins
 ## Resources
 
 https://omkarkulkarni.vercel.app/snippets/reusable-button-component
+https://www.typescriptlang.org/docs/handbook/utility-types.html
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

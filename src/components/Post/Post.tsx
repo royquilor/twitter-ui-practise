@@ -1,25 +1,26 @@
-import Image from "next/image";
-import Link from "next/link";
+import { ReactNode } from "react";
 import { HiOutlineHeart } from "react-icons/hi2";
 import { HiArrowUpTray } from 'react-icons/hi2'
 import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2'
 import { HiOutlineArrowPath } from 'react-icons/hi2'
-import { HiOutlineEllipsisHorizontal } from "react-icons/hi2";
 import { HiOutlineChartBarSquare } from "react-icons/hi2";
 import DropdownMenuDemo from "../DropdownMenu/DropdownMenu";
 import HoverCardDemo from "../HoverCard/HoverCard";
 
-const Post = ({ content, name, username, date, children }) => {
+interface Props {
+  content: string;
+  name: string;
+  username: string;
+  date: string;
+  children?: ReactNode;
+}
+
+export function Post({ content, name, username, date, children, ...props }: Props) {
+
   return (
     <div className="flex flex-1 gap-x-4">
       <div className="flex-shrink-0">
         <HoverCardDemo />
-      {/* <Image
-          width={48}
-          height={48}
-          className="rounded-full"
-          src="https://pbs.twimg.com/profile_images/1489998205236527108/q2REh8nW_400x400.jpg"
-          alt={`Headshot of ${name}`} />   */}
       </div>
       <div className="flex flex-col flex-1">
         <div className="flex flex-1">
@@ -52,5 +53,3 @@ const Post = ({ content, name, username, date, children }) => {
   </div>
 )
 }
-
-export default Post;

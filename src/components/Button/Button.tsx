@@ -1,10 +1,9 @@
 import { cva, VariantProps } from 'class-variance-authority';
-import Link from "next/link"
 
 interface Props {
 	children: React.ReactNode
 	intent?: 'primary' | 'outline' | 'disabled'
-	size?: 'default' | 'small'
+	size?: 'default' | 'small' | 'large'
 }
 
 const ButtonStyles = cva(
@@ -19,6 +18,7 @@ const ButtonStyles = cva(
 			size: {
         default: 'px-4 py-2 text-sm',
 				small: 'px-4 py-1 text-sm',
+				large: 'px-3 xl:px-20 py-3 text-lg'
 			},
 		},
 		defaultVariants: {

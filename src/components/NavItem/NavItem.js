@@ -2,13 +2,13 @@ import { cva, VariantProps } from 'class-variance-authority';
 import Link from "next/link"
 
 const NavItemStyles = cva(
-	'inline-flex items-center gap-x-4 text-slate-900 my-1',
+	'items-center gap-x-4 text-slate-900 my-1',
 	{
 		variants: {
       width: {
         full: 'w-full',
 				inline: 'inline-flex [&_div:first-child]:rounded-full',
-				mobile: 'justify-center xl:justify-start '
+				mobile: 'inline-flex justify-center xl:justify-start '
 			},
 			size: {
         default: '',

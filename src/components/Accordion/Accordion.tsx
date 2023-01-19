@@ -84,7 +84,7 @@ export default function Accordion(props: Props) {
         <AccordionPrimitive.Item
           key={`header-${i}`}
           value={`item-${i + 1}`}
-          className="rounded-lg focus:outline-none overflow-hidden"
+          className="focus:outline-none overflow-hidden"
         >
           <AccordionPrimitive.Header className="w-full">
             <AccordionPrimitive.Trigger
