@@ -6,7 +6,7 @@ https://user-images.githubusercontent.com/2366186/213792809-21e54048-91da-4ed0-8
 
 ## Getting Started
 
-Get the server running
+When you git clone the repository
 ```bash
 npm install
 npm run dev
@@ -36,17 +36,17 @@ People I followed and checked out their repositories and videos to build the clo
 - [Steven Tey](https://github.com/steven-tey)
 - [Lee Rob](https://github.com/leerob)
 
-### Misc
-- [Reusable button component](https://omkarkulkarni.vercel.app/snippets/reusable-button-component)
-- [Absolute imports](https://omkarkulkarni.vercel.app/snippets/absolute-imports)
-
 ## Text component
 
-[Text component youtube video](https://www.youtube.com/watch?v=b1NEj8HG1yU)
+[Text component youtube video](https://www.youtube.com/watch?v=b1NEj8HG1yU) - currenty testing
 
 ## Storybook
 
 [Storybook addon next](https://storybook.js.org/addons/storybook-addon-next)
+
+### Misc
+- [Reusable button component](https://omkarkulkarni.vercel.app/snippets/reusable-button-component)
+- [Absolute imports](https://omkarkulkarni.vercel.app/snippets/absolute-imports)
 
 ## Author
 
