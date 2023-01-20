@@ -2,7 +2,7 @@ import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 
 import cx from 'classnames';
 import { ReactNode } from 'react';
-import NavItem from '../NavItem/NavItem';
+import NavItem from '@ui/NavItem';
 
 import {
 	HiOutlineEllipsisHorizontal,

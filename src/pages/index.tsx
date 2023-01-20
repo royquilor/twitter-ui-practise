@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import Nav from '../components/Nav/Nav';
-import Header from '../components/Header/Header';
-import Search from '../components/Search/Search';
-import PanelItem from '../components/PanelItem/PanelItem';
-import Panel from '../components/Panel/Panel';
-import PanelItemTrends from '../components/PanelItemTrends/PanelItemTrends';
-import Footer from '../components/Footer/Footer';
-import Tabs from '../components/Tabs/Tabs';
+import Nav from '@ui/Nav';
+import Header from '@ui/Header';
+import Search from '@ui/Search';
+import PanelItem from '@ui/PanelItem';
+import Panel from '@ui/Panel';
+import PanelItemTrends from '@ui/PanelItemTrends';
+import Footer from '@ui/Footer';
+import Tabs from '@ui/Tabs';
 
 export default function Home() {
 	return (

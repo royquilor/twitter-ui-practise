@@ -11,6 +11,20 @@ Plugins
 https://omkarkulkarni.vercel.app/snippets/reusable-button-component
 https://omkarkulkarni.vercel.app/snippets/absolute-imports
 
+## Text component
+
+Mewtru
+https://www.youtube.com/watch?v=b1NEj8HG1yU
+
+## Absolute alias path to import components
+in tsconfig.json on 
+"compilerOptions": {
+  "paths": {
+			"@ui/*": ["./src/components/ui/*"]
+		}
+}
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

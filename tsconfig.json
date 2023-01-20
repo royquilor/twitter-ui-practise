@@ -13,15 +13,19 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
-		"incremental": true
+		"incremental": true,
+		"paths": {
+			"@ui/*": ["./src/components/*"]
+			// "@/components/*": ["components/*"]
+		}
 	},
 	"include": [
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/components/PopoverDemo/PopoverDemo.tsx",
-		"src/components/PopoverDemo/PopoverDemo.tsx",
-		"src/components/NavItem/NavItem.tsx"
+		"src/components/PopoverDemo.tsx",
+		"src/components/PopoverDemo.tsx",
+		"src/components/NavItem.tsx"
 	],
 	"exclude": ["node_modules"]
 }

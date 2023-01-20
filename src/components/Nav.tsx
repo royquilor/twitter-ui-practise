@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
-import DialogDemo from '../Dialog/Dialog';
-import PopoverDemo from '../PopoverDemo/PopoverDemo';
-import NavItem from '../NavItem/NavItem';
-import AccountNavItem from '../AccountNavItem/AccountNavItem';
+import DialogDemo from '@ui/Dialog';
+import PopoverDemo from '@ui/PopoverDemo';
+import NavItem from '@ui/NavItem';
+import AccountNavItem from '@ui/AccountNavItem';
 
 import { SiTwitter } from 'react-icons/si';
 import {

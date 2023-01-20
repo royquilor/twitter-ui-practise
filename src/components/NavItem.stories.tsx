@@ -1,4 +1,4 @@
-import NavItem from './NavItem';
+import NavItem from '@ui/NavItem';
 
 export default {
 	title: 'Components/NavItem',

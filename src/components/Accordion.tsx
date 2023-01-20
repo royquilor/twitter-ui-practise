@@ -1,6 +1,7 @@
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import cx from 'classnames';
-import NavItem from '../NavItem/NavItem';
+import NavItem from '@ui/NavItem';
+// import NavItem from '@ui/NavItem';
 import { ReactNode } from 'react';
 
 import {

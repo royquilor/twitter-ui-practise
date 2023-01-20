@@ -1,11 +1,13 @@
-import Avatar from '../Avatar/Avatar';
+import Avatar from '@ui/Avatar';
 import Link from 'next/link';
-import Button from '../Button/Button';
-import { RiImage2Line } from 'react-icons/ri';
-import { RiFileGifLine } from 'react-icons/ri';
-import { RiChatPollLine } from 'react-icons/ri';
-import { RiEmotionLine } from 'react-icons/ri';
-import { RiMapPin2Line } from 'react-icons/ri';
+import Button from '@ui/Button';
+import {
+	RiImage2Line,
+	RiFileGifLine,
+	RiChatPollLine,
+	RiEmotionLine,
+	RiMapPin2Line,
+} from 'react-icons/ri';
 
 import { cva } from 'class-variance-authority';
 

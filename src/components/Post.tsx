@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import DropdownMenuDemo from '../DropdownMenu/DropdownMenu';
-import HoverCardDemo from '../HoverCard/HoverCard';
+import DropdownMenuDemo from '@ui/DropdownMenu';
+import HoverCardDemo from '@ui/HoverCard';
 
 import {
 	HiOutlineHeart,

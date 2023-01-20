@@ -1,7 +1,7 @@
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 import cx from 'classnames';
-import TweetForm from '../TweetForm/TweetForm';
-import Feed from '../Feed/Feed';
+import TweetForm from '@ui/TweetForm';
+import Feed from '@ui/Feed';
 
 const Tabs = () => (
 	<TabsPrimitive.Root className="TabsRoot" defaultValue="tab1">
