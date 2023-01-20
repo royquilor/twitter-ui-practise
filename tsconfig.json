@@ -15,16 +15,16 @@
 		"jsx": "preserve",
 		"incremental": true,
 		"paths": {
-			"@ui/*": ["./src/components/*"]
-			// "@/components/*": ["components/*"]
+			"@ui/*": ["./src/components/*"],
+			"@rd/*": ["./src/components/radix/*"]
 		}
 	},
 	"include": [
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/components/PopoverDemo.tsx",
-		"src/components/PopoverDemo.tsx",
+		"src/components/radix/PopoverDemo.tsx",
+		"src/components/radix/PopoverDemo.tsx",
 		"src/components/NavItem.tsx"
 	],
 	"exclude": ["node_modules"]

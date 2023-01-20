@@ -1,4 +1,4 @@
-import Avatar from './Avatar';
+import Avatar from '@rd/Avatar';
 
 export default {
 	title: 'Components/Avatar',

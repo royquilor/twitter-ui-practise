@@ -6,7 +6,7 @@ import PanelItem from '@ui/PanelItem';
 import Panel from '@ui/Panel';
 import PanelItemTrends from '@ui/PanelItemTrends';
 import Footer from '@ui/Footer';
-import Tabs from '@ui/Tabs';
+import Tabs from '@rd/Tabs';
 
 export default function Home() {
 	return (

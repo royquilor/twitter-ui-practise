@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import DialogDemo from '@ui/Dialog';
-import PopoverDemo from '@ui/PopoverDemo';
+import DialogDemo from '@rd/Dialog';
+import PopoverDemo from '@rd/PopoverDemo';
 import NavItem from '@ui/NavItem';
 import AccountNavItem from '@ui/AccountNavItem';
 

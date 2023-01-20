@@ -1,4 +1,4 @@
-import Avatar from '@ui/Avatar';
+import Avatar from '@rd/Avatar';
 import Link from 'next/link';
 
 import { HiOutlineEllipsisHorizontal } from 'react-icons/hi2';

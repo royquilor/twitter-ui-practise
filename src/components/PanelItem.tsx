@@ -1,4 +1,4 @@
-import Avatar from '@ui/Avatar';
+import Avatar from '@rd/Avatar';
 import Button from '@ui/Button';
 
 interface Props {
