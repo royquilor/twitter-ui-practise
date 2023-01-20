@@ -5,6 +5,10 @@ export default {
 	component: Panel,
 };
 
-const Template = () => <Panel />;
+const Template = () => (
+	<Panel title="title" href="/">
+		Example
+	</Panel>
+);
 
 export const Default = Template.bind({});
