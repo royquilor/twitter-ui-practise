@@ -2,6 +2,8 @@
 
 The goal of this project is to learn about Next JS. My background is a Web Designer with experience in HTML and Tailwind CSS with some basic JavaScript knowledge. I ended up trying to recreate the homepage UI of the Twitter app. It's far from the original and I'm sure there are many flaws. Any suggestions or improvements, please let me know. The main thing is to have fun and learn something new, hopefully you can too.
 
+https://user-images.githubusercontent.com/2366186/213792809-21e54048-91da-4ed0-881e-23544c036891.mp4
+
 ## Getting Started
 
 Get the server running
