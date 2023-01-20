@@ -47,7 +47,7 @@ const HoverCardDemo = ({
 					'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
 				)}
 			>
-				<div className="w-full flex flex-col">
+				<div className="w-full flex flex-col gap-y-2">
 					<div className="flex justify-between items-start">
 						<Avatar src={src} alt={alt} initials={initials} />
 						<div>
