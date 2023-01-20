@@ -11,7 +11,6 @@ import { HiOutlineBolt } from 'react-icons/hi2';
 import cx from 'classnames';
 import NavItem from '../NavItem/NavItem';
 import { ReactNode } from 'react';
-import React from 'react';
 
 interface AccordionItem {
 	header: string;
