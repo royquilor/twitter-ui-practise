@@ -3,13 +3,16 @@ import DialogDemo from '../Dialog/Dialog';
 import PopoverDemo from '../PopoverDemo/PopoverDemo';
 import NavItem from '../NavItem/NavItem';
 import AccountNavItem from '../AccountNavItem/AccountNavItem';
+
 import { SiTwitter } from 'react-icons/si';
-import { HiOutlineHome } from 'react-icons/hi2';
-import { HiHashtag } from 'react-icons/hi2';
-import { HiOutlineBell } from 'react-icons/hi2';
-import { HiOutlineEnvelope } from 'react-icons/hi2';
-import { HiOutlineBookmark } from 'react-icons/hi2';
-import { HiOutlineUser } from 'react-icons/hi2';
+import {
+	HiOutlineHome,
+	HiHashtag,
+	HiOutlineBell,
+	HiOutlineEnvelope,
+	HiOutlineBookmark,
+	HiOutlineUser,
+} from 'react-icons/hi2';
 
 interface NavLinkItem {
 	href: string;

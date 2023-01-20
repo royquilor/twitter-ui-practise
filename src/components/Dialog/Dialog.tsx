@@ -1,6 +1,5 @@
 import * as DialogPrimitive from '@radix-ui/react-dialog';
-import { HiOutlineXMark } from 'react-icons/hi2';
-import { HiOutlinePencil } from 'react-icons/hi2';
+import { HiOutlineXMark, HiOutlinePencil } from 'react-icons/hi2';
 import TweetForm from '../TweetForm/TweetForm';
 import Button from '../Button/Button';
 

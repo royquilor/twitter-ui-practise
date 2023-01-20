@@ -1,11 +1,14 @@
 import { ReactNode } from 'react';
-import { HiOutlineHeart } from 'react-icons/hi2';
-import { HiArrowUpTray } from 'react-icons/hi2';
-import { HiOutlineChatBubbleOvalLeft } from 'react-icons/hi2';
-import { HiOutlineArrowPath } from 'react-icons/hi2';
-import { HiOutlineChartBarSquare } from 'react-icons/hi2';
 import DropdownMenuDemo from '../DropdownMenu/DropdownMenu';
 import HoverCardDemo from '../HoverCard/HoverCard';
+
+import {
+	HiOutlineHeart,
+	HiArrowUpTray,
+	HiOutlineChatBubbleOvalLeft,
+	HiOutlineArrowPath,
+	HiOutlineChartBarSquare,
+} from 'react-icons/hi2';
 
 interface Props {
 	content: string;

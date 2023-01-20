@@ -2,11 +2,14 @@ import * as PopoverPrimitive from '@radix-ui/react-popover';
 import * as SeparatorPrimitive from '@radix-ui/react-separator';
 import NavItem from '../NavItem/NavItem';
 import Accordion from '../Accordion/Accordion';
-import { HiOutlineEllipsisHorizontalCircle } from 'react-icons/hi2';
-import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
-import { HiListBullet } from 'react-icons/hi2';
-import { HiOutlineUserGroup } from 'react-icons/hi2';
 import { ReactNode } from 'react';
+
+import {
+	HiOutlineEllipsisHorizontalCircle,
+	HiOutlineChatBubbleBottomCenterText,
+	HiListBullet,
+	HiOutlineUserGroup,
+} from 'react-icons/hi2';
 
 interface NavLinkItem {
 	href: string;

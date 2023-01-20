@@ -1,4 +1,4 @@
-import { cva, VariantProps } from 'class-variance-authority';
+import { cva } from 'class-variance-authority';
 
 interface Props {
 	children: React.ReactNode;

@@ -5,6 +5,8 @@ export default {
 	component: PanelItem,
 };
 
-const Template = () => <PanelItem />;
+const Template = () => (
+	<PanelItem name="John Doe" username="johndoe" src="" initials="JD" />
+);
 
 export const Default = Template.bind({});

@@ -4,14 +4,16 @@ import cx from 'classnames';
 import { ReactNode } from 'react';
 import NavItem from '../NavItem/NavItem';
 
-import { HiOutlineEllipsisHorizontal } from 'react-icons/hi2';
-import { HiOutlineFaceFrown } from 'react-icons/hi2';
-import { HiOutlineUserPlus } from 'react-icons/hi2';
-import { HiOutlineQueueList } from 'react-icons/hi2';
-import { HiOutlineSpeakerXMark } from 'react-icons/hi2';
-import { HiOutlineNoSymbol } from 'react-icons/hi2';
-import { HiCodeBracket } from 'react-icons/hi2';
-import { HiOutlineFlag } from 'react-icons/hi2';
+import {
+	HiOutlineEllipsisHorizontal,
+	HiOutlineFaceFrown,
+	HiOutlineUserPlus,
+	HiOutlineQueueList,
+	HiOutlineSpeakerXMark,
+	HiOutlineNoSymbol,
+	HiCodeBracket,
+	HiOutlineFlag,
+} from 'react-icons/hi2';
 
 interface AccordionItem {
 	href: string;

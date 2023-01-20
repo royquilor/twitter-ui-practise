@@ -1,16 +1,19 @@
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
-import { HiChevronDown } from 'react-icons/hi2';
-import { HiOutlineChartBarSquare } from 'react-icons/hi2';
-import { HiOutlineIdentification } from 'react-icons/hi2';
-import { HiOutlineFilm } from 'react-icons/hi2';
-import { HiOutlineBanknotes } from 'react-icons/hi2';
-import { HiOutlineCog8Tooth } from 'react-icons/hi2';
-import { HiOutlineLifebuoy } from 'react-icons/hi2';
-import { HiOutlineComputerDesktop } from 'react-icons/hi2';
-import { HiOutlineBolt } from 'react-icons/hi2';
 import cx from 'classnames';
 import NavItem from '../NavItem/NavItem';
 import { ReactNode } from 'react';
+
+import {
+	HiChevronDown,
+	HiOutlineChartBarSquare,
+	HiOutlineIdentification,
+	HiOutlineFilm,
+	HiOutlineBanknotes,
+	HiOutlineCog8Tooth,
+	HiOutlineLifebuoy,
+	HiOutlineComputerDesktop,
+	HiOutlineBolt,
+} from 'react-icons/hi2';
 
 interface AccordionItem {
 	header: string;
