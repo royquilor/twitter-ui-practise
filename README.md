@@ -35,6 +35,7 @@ People I followed and checked out their repositories and videos to build the clo
 - [Colby Fayock](https://github.com/colbyfayock)
 - [Steven Tey](https://github.com/steven-tey)
 - [Lee Rob](https://github.com/leerob)
+- [Florentin](https://github.com/ecklf)
 
 ## Text component
 
