@@ -1,6 +1,6 @@
-import * as Popover from '@radix-ui/react-popover';
-import * as Separator from '@radix-ui/react-separator';
-import { NavItem } from '../NavItem/NavItem';
+import * as PopoverPrimitive from '@radix-ui/react-popover';
+import * as SeparatorPrimitive from '@radix-ui/react-separator';
+import NavItem from '../NavItem/NavItem';
 import Accordion from '../Accordion/Accordion';
 import { HiOutlineEllipsisHorizontalCircle } from 'react-icons/hi2';
 import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2';
@@ -33,8 +33,8 @@ const items: NavLinkItem[] = [
 ];
 
 const PopoverDemo = () => (
-	<Popover.Root>
-		<Popover.Trigger asChild>
+	<PopoverPrimitive.Root>
+		<PopoverPrimitive.Trigger asChild>
 			<button
 				className="focus:outline-none items-center gap-x-4 text-slate-900 my-1 inline-flex [&_div:first-child]:rounded-full"
 				aria-label="Update dimensions"
@@ -46,9 +46,9 @@ const PopoverDemo = () => (
 					</div>
 				</div>
 			</button>
-		</Popover.Trigger>
-		<Popover.Portal>
-			<Popover.Content
+		</PopoverPrimitive.Trigger>
+		<PopoverPrimitive.Portal>
+			<PopoverPrimitive.Content
 				align="start"
 				side="top"
 				sideOffset={-60}
@@ -71,12 +71,12 @@ const PopoverDemo = () => (
 					))}
 				</div>
 
-				<Separator.Root className="h-px bg-slate-200 border-0 dark:bg-slate-700" />
+				<SeparatorPrimitive.Root className="h-px bg-slate-200 border-0 dark:bg-slate-700" />
 
 				<Accordion />
-			</Popover.Content>
-		</Popover.Portal>
-	</Popover.Root>
+			</PopoverPrimitive.Content>
+		</PopoverPrimitive.Portal>
+	</PopoverPrimitive.Root>
 );
 
 export default PopoverDemo;

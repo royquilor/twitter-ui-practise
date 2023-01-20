@@ -1,15 +1,15 @@
-import { NavItem } from '../NavItem/NavItem';
-import { SiTwitter } from 'react-icons/si';
+import { ReactNode } from 'react';
+import DialogDemo from '../Dialog/Dialog';
+import PopoverDemo from '../PopoverDemo/PopoverDemo';
+import NavItem from '../NavItem/NavItem';
 import AccountNavItem from '../AccountNavItem/AccountNavItem';
+import { SiTwitter } from 'react-icons/si';
 import { HiOutlineHome } from 'react-icons/hi2';
 import { HiHashtag } from 'react-icons/hi2';
 import { HiOutlineBell } from 'react-icons/hi2';
 import { HiOutlineEnvelope } from 'react-icons/hi2';
 import { HiOutlineBookmark } from 'react-icons/hi2';
 import { HiOutlineUser } from 'react-icons/hi2';
-import { ReactNode } from 'react';
-import DialogDemo from '../Dialog/Dialog';
-import PopoverDemo from '../PopoverDemo/PopoverDemo';
 
 interface NavLinkItem {
 	href: string;
@@ -50,35 +50,35 @@ const items: NavLinkItem[] = [
 	},
 ];
 
-export default function Nav() {
-	return (
-		<header className="hidden sm:flex w-24 xl:col-span-2">
-			<div className="flex flex-1 xl:w-60 flex-col fixed h-full">
-				<div className="flex flex-col flex-1">
-					<NavItem href="/home" width="inline" size="default">
-						<SiTwitter className="w-6 h-6" />
-					</NavItem>
-					{items.map(({ href, text, icon }, i) => (
-						<div
-							key={`header-${i}`}
-							// value={`item-${i + 1}`}
-							className="rounded-lg focus:outline-none overflow-hidden"
-						>
-							<NavItem href={href} width="inline" size="default">
-								{icon}
-								<div className="hidden xl:inline-flex flex-none text-lg font-medium">
-									{text}
-								</div>
-							</NavItem>
-						</div>
-					))}
-					<PopoverDemo />
-					<DialogDemo />
-				</div>
-				<div>
-					<AccountNavItem />
-				</div>
+const Nav = () => (
+	<header className="hidden sm:flex w-24 xl:col-span-2">
+		<div className="flex flex-1 xl:w-60 flex-col fixed h-full">
+			<div className="flex flex-col flex-1">
+				<NavItem href="/home" width="inline" size="default">
+					<SiTwitter className="w-6 h-6" />
+				</NavItem>
+				{items.map(({ href, text, icon }, i) => (
+					<div
+						key={`header-${i}`}
+						// value={`item-${i + 1}`}
+						className="rounded-lg focus:outline-none overflow-hidden"
+					>
+						<NavItem href={href} width="inline" size="default">
+							{icon}
+							<div className="hidden xl:inline-flex flex-none text-lg font-medium">
+								{text}
+							</div>
+						</NavItem>
+					</div>
+				))}
+				<PopoverDemo />
+				<DialogDemo />
 			</div>
-		</header>
-	);
-}
+			<div>
+				<AccountNavItem />
+			</div>
+		</div>
+	</header>
+);
+
+export default Nav;

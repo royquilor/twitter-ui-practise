@@ -1,4 +1,4 @@
-import { Button } from './Button';
+import Button from './Button';
 
 export default {
 	title: 'Components/Button',

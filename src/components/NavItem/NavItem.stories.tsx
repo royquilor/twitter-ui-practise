@@ -1,4 +1,4 @@
-import { NavItem } from './NavItem';
+import NavItem from './NavItem';
 
 export default {
 	title: 'Components/NavItem',
@@ -6,7 +6,7 @@ export default {
 };
 
 const Template = () => (
-	<NavItem href="/" width="" size="">
+	<NavItem href="/" width="full" size="default">
 		Example
 	</NavItem>
 );

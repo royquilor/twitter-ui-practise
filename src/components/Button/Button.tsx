@@ -29,6 +29,8 @@ const ButtonStyles = cva(
 	},
 );
 
-export function Button({ children, intent, size, ...props }: Props) {
-	return <button className={ButtonStyles({ intent, size })}>{children}</button>;
-}
+const Button = ({ children, intent, size, ...props }: Props) => (
+	<button className={ButtonStyles({ intent, size })}>{children}</button>
+);
+
+export default Button;

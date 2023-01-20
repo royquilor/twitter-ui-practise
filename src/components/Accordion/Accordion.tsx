@@ -9,8 +9,9 @@ import { HiOutlineLifebuoy } from 'react-icons/hi2';
 import { HiOutlineComputerDesktop } from 'react-icons/hi2';
 import { HiOutlineBolt } from 'react-icons/hi2';
 import cx from 'classnames';
-import { NavItem } from '../NavItem/NavItem';
+import NavItem from '../NavItem/NavItem';
 import { ReactNode } from 'react';
+import React from 'react';
 
 interface AccordionItem {
 	header: string;
@@ -89,44 +90,42 @@ const items: AccordionItem[] = [
 	},
 ];
 
-interface Props {}
+interface AccordionProps {}
 
-export default function Accordion(props: Props) {
-	return (
-		<>
-			<AccordionPrimitive.Root collapsible type="single">
-				{items.map(({ header, content }, i) => (
-					<AccordionPrimitive.Item
-						key={`header-${i}`}
-						value={`item-${i + 1}`}
-						className="focus:outline-none overflow-hidden"
+const Accordion = (props: AccordionProps) => (
+	<AccordionPrimitive.Root collapsible type="single">
+		{items.map(({ header, content }, i) => (
+			<AccordionPrimitive.Item
+				key={`header-${i}`}
+				value={`item-${i + 1}`}
+				className="focus:outline-none overflow-hidden"
+			>
+				<AccordionPrimitive.Header className="w-full">
+					<AccordionPrimitive.Trigger
+						className={cx(
+							'AccordionTrigger group',
+							'radix-state-open:rounded-t-lg radix-state-closed:rounded-lg',
+							'focus:outline-none hover:bg-slate-100',
+							'inline-flex w-full items-center justify-between bg-white px-4 py-4 text-left dark:bg-gray-800',
+						)}
 					>
-						<AccordionPrimitive.Header className="w-full">
-							<AccordionPrimitive.Trigger
-								className={cx(
-									'AccordionTrigger group',
-									'radix-state-open:rounded-t-lg radix-state-closed:rounded-lg',
-									'focus:outline-none hover:bg-slate-100',
-									'inline-flex w-full items-center justify-between bg-white px-4 py-4 text-left dark:bg-gray-800',
-								)}
-							>
-								<span className="text-sm text-gray-900 dark:text-gray-100 font-bold">
-									{header}
-								</span>
-								<HiChevronDown
-									className={cx(
-										'ml-2 h-5 w-5 shrink-0 text-gray-700 ease-in-out dark:text-gray-400',
-										'AccordionChevron xgroup-radix-state-open:rotate-180 xgroup-radix-state-open:duration-300',
-									)}
-								/>
-							</AccordionPrimitive.Trigger>
-						</AccordionPrimitive.Header>
-						<AccordionPrimitive.Content className="AccordionContent w-full dark:bg-gray-800">
-							{content}
-						</AccordionPrimitive.Content>
-					</AccordionPrimitive.Item>
-				))}
-			</AccordionPrimitive.Root>
-		</>
-	);
-}
+						<span className="text-sm text-gray-900 dark:text-gray-100 font-bold">
+							{header}
+						</span>
+						<HiChevronDown
+							className={cx(
+								'ml-2 h-5 w-5 shrink-0 text-gray-700 ease-in-out dark:text-gray-400',
+								'AccordionChevron',
+							)}
+						/>
+					</AccordionPrimitive.Trigger>
+				</AccordionPrimitive.Header>
+				<AccordionPrimitive.Content className="AccordionContent w-full dark:bg-gray-800">
+					{content}
+				</AccordionPrimitive.Content>
+			</AccordionPrimitive.Item>
+		))}
+	</AccordionPrimitive.Root>
+);
+
+export default Accordion;

@@ -1,6 +1,6 @@
-import * as HoverCard from '@radix-ui/react-hover-card';
+import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 import cx from 'classnames';
-import { Button } from '../Button/Button';
+import Button from '../Button/Button';
 import Avatar from '../Avatar/Avatar';
 import UserCard from '../UserCard/UserCard';
 
@@ -25,8 +25,8 @@ const HoverCardDemo = ({
 	following,
 	followers,
 }: Props) => (
-	<HoverCard.Root>
-		<HoverCard.Trigger asChild>
+	<HoverCardPrimitive.Root>
+		<HoverCardPrimitive.Trigger asChild>
 			<a
 				className="ImageTrigger inline-flex h-12 w-12 items-center justify-center rounded-full overflow-hidden bg-white dark:bg-gray-90"
 				href="https://twitter.com/royquilor"
@@ -35,13 +35,13 @@ const HoverCardDemo = ({
 			>
 				<Avatar src={src} alt={alt} initials={initials} />
 			</a>
-		</HoverCard.Trigger>
-		<HoverCard.Portal>
-			<HoverCard.Content
+		</HoverCardPrimitive.Trigger>
+		<HoverCardPrimitive.Portal>
+			<HoverCardPrimitive.Content
 				align="center"
 				sideOffset={4}
 				className={cx(
-					'HoverCardContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
+					'HoverCardPrimitiveContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
 					'w-72 rounded-lg p-4 xmd:w-full',
 					'bg-white dark:bg-gray-800 border border-slate-200 shadow-xl',
 					'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
@@ -64,9 +64,9 @@ const HoverCardDemo = ({
 						followers={followers}
 					/>
 				</div>
-			</HoverCard.Content>
-		</HoverCard.Portal>
-	</HoverCard.Root>
+			</HoverCardPrimitive.Content>
+		</HoverCardPrimitive.Portal>
+	</HoverCardPrimitive.Root>
 );
 
 export default HoverCardDemo;
