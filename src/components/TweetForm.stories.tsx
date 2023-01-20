@@ -1,4 +1,4 @@
-import TweetForm from './TweetForm';
+import TweetForm from '@ui/TweetForm';
 
 export default {
 	title: 'Components/TweetForm',

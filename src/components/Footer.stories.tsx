@@ -1,4 +1,4 @@
-import Footer from './Footer';
+import Footer from '@ui/Footer';
 
 export default {
 	title: 'Components/Footer',

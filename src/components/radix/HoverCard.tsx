@@ -42,12 +42,12 @@ const HoverCardDemo = ({
 				sideOffset={4}
 				className={cx(
 					'HoverCardPrimitiveContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
-					'w-72 rounded-lg p-4 xmd:w-full',
+					'w-72 rounded-lg p-4',
 					'bg-white dark:bg-gray-800 border border-slate-200 shadow-xl',
 					'focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75',
 				)}
 			>
-				<div className="w-full flex flex-col gap-y-3">
+				<div className="w-full flex flex-col">
 					<div className="flex justify-between items-start">
 						<Avatar src={src} alt={alt} initials={initials} />
 						<div>

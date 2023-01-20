@@ -1,4 +1,4 @@
-import PanelItem from './PanelItem';
+import PanelItem from '@ui/PanelItem';
 
 export default {
 	title: 'Components/PanelItem',

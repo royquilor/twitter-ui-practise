@@ -1,4 +1,4 @@
-import AccountNavItem from './AccountNavItem';
+import AccountNavItem from '@ui/AccountNavItem';
 
 export default {
 	title: 'Components/AccountNavItem',

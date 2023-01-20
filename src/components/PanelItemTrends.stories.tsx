@@ -1,4 +1,4 @@
-import PanelItemTrends from './PanelItemTrends';
+import PanelItemTrends from '@ui/PanelItemTrends';
 
 export default {
 	title: 'Components/PanelItemTrends',

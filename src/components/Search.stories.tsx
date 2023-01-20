@@ -1,4 +1,4 @@
-import Search from './Search';
+import Search from '@ui/Search';
 
 export default {
 	title: 'Components/Search',

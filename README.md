@@ -24,6 +24,17 @@ in tsconfig.json on
 		}
 }
 
+## Storybook
+
+https://storybook.js.org/addons/storybook-addon-next
+
+Update yous tsconfig file for alias paths
+```
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["components/*"]
+		}
+```
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

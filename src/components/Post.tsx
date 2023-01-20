@@ -61,7 +61,7 @@ const Post = ({
 				</div>
 			</div>
 			<div className="text-sm text-slate-900 font-medium mb-4">{content}</div>
-			<div className="">{children}</div>
+			{children}
 			<ul className="flex gap-x-8 xl:gap-x-14 text-xs text-slate-700 [&_li]:flex [&_li]:items-center [&_li]:gap-x-2 [&_li:xl]:gap-x-3 ">
 				<li>
 					<HiOutlineChartBarSquare className="w-5 h-5" />

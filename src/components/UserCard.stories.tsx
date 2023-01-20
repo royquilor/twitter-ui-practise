@@ -1,4 +1,4 @@
-import UserCard from './UserCard';
+import UserCard from '@ui/UserCard';
 
 export default {
 	title: 'Components/UserCard',

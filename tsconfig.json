@@ -14,9 +14,11 @@
 		"isolatedModules": true,
 		"jsx": "preserve",
 		"incremental": true,
+		"baseUrl": ".",
 		"paths": {
 			"@ui/*": ["./src/components/*"],
-			"@rd/*": ["./src/components/radix/*"]
+			"@rd/*": ["./src/components/radix/*"],
+			"@/components/*": ["components/*"]
 		}
 	},
 	"include": [

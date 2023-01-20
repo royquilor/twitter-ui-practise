@@ -1,4 +1,5 @@
-import Panel from './Panel';
+import Panel from '@ui/Panel';
+import PanelItem from '@ui/PanelItem';
 
 export default {
 	title: 'Components/Panel',
@@ -7,7 +8,7 @@ export default {
 
 const Template = () => (
 	<Panel title="title" href="/">
-		Example
+		<PanelItem name="John Doe" username="johndoe" src="" initials="JD" />
 	</Panel>
 );
 
