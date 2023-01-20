@@ -1,28 +1,56 @@
-## Starter with Tailwind CSS and Custom font
+# Twitter UI practice clone
 
-Plugins
+The goal of this project is to learn about Next JS. My background is a Web Designer with experience in HTML and Tailwind CSS with some basic JavaScript knowledge. I ended up trying to recreate the homepage UI of the Twitter app. It's far from the original and I'm sure there are many flaws. Any suggestions or improvements, please let me know. The main thing is to have fun and learn something new, hopefully you can too.
 
-- Typography for max prose blog content
-- Forms
-- Aspect ratio for images
+## Getting Started
+
+Get the server running
+```bash
+npm install
+npm run dev
+```
+
+Checkout storybook to view components in isolation
+```bash
+npm run storybook
+```
+
+## Issues
+The right side panel does not follow the same behavior as Twitter. As you scroll, it sticks but you should be able to see the footer links.
+
+## Stack
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix](https://www.radix-ui.com/)
+- [Storybook](https://storybook.js.org/)
+- [Vercel](https://vercel.com/)
 
 ## Resources
 
+People I followed and checked out their repositories and videos to build the clone.
+
+- [Tru Narla](https://github.com/tnarla)
+- [Colby Fayock](https://github.com/colbyfayock)
+- [Steven Tey](https://github.com/steven-tey)
+- [Lee Rob](https://github.com/leerob)
+
+### Misc
 https://omkarkulkarni.vercel.app/snippets/reusable-button-component
 https://omkarkulkarni.vercel.app/snippets/absolute-imports
 
 ## Text component
 
-Mewtru
-https://www.youtube.com/watch?v=b1NEj8HG1yU
+[text component](https://www.youtube.com/watch?v=b1NEj8HG1yU)
 
 ## Absolute alias path to import components
-in tsconfig.json on 
+in tsconfig.json on
+``` 
 "compilerOptions": {
   "paths": {
 			"@ui/*": ["./src/components/ui/*"]
 		}
 }
+```
 
 ## Storybook
 
@@ -36,41 +64,12 @@ Update yous tsconfig file for alias paths
 		}
 ```
 
-https://egghead.io/lessons/next-js-add-controls-to-next-js-page-props-with-story-args
+## Author
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[Roy Quilor](https://github.com/royquilor)
 
-## Getting Started
+## Connect
 
-First, run the development server:
+[🐦 Follow me on Twitter](https://twitter.com/RoyQuilor)
+[📺 Subscribe on YouTube](https://www.youtube.com/c/readydesignerone)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
