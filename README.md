@@ -40,7 +40,7 @@ https://omkarkulkarni.vercel.app/snippets/absolute-imports
 
 ## Text component
 
-[text component](https://www.youtube.com/watch?v=b1NEj8HG1yU)
+[Text component youtube video](https://www.youtube.com/watch?v=b1NEj8HG1yU)
 
 ## Absolute alias path to import components
 in tsconfig.json on
@@ -70,6 +70,6 @@ Update yous tsconfig file for alias paths
 
 ## Connect
 
-[🐦 Follow me on Twitter](https://twitter.com/RoyQuilor)
-[📺 Subscribe on YouTube](https://www.youtube.com/c/readydesignerone)
+- [🐦 Follow me on Twitter](https://twitter.com/RoyQuilor)
+- [📺 Subscribe on YouTube](https://www.youtube.com/c/readydesignerone)
 
