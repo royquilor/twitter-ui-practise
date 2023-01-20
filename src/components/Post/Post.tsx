@@ -14,6 +14,9 @@ interface Props {
 	date: string;
 	src: string;
 	initials: string;
+	followers: string;
+	following: string;
+	description: string;
 	children?: ReactNode;
 }
 
@@ -25,12 +28,24 @@ export function Post({
 	children,
 	src,
 	initials,
+	followers,
+	following,
+	description,
 	...props
 }: Props) {
 	return (
 		<div className="flex flex-1 gap-x-4">
 			<div className="flex-shrink-0">
-				<HoverCardDemo src={src} alt={name} initials={initials} />
+				<HoverCardDemo
+					src={src}
+					alt={name}
+					initials={initials}
+					name={name}
+					username={username}
+					following={following}
+					followers={followers}
+					description={description}
+				/>
 			</div>
 			<div className="flex flex-col flex-1">
 				<div className="flex flex-1">

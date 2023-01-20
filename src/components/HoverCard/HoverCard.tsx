@@ -2,14 +2,29 @@ import * as HoverCard from '@radix-ui/react-hover-card';
 import cx from 'classnames';
 import { Button } from '../Button/Button';
 import Avatar from '../Avatar/Avatar';
+import UserCard from '../UserCard/UserCard';
 
 interface Props {
 	src: string;
 	alt: string;
 	initials: string;
+	name: string;
+	username: string;
+	description: string;
+	following: string;
+	followers: string;
 }
 
-const HoverCardDemo = ({ src, alt, initials }: Props) => (
+const HoverCardDemo = ({
+	src,
+	alt,
+	initials,
+	name,
+	username,
+	description,
+	following,
+	followers,
+}: Props) => (
 	<HoverCard.Root>
 		<HoverCard.Trigger asChild>
 			<a
@@ -41,30 +56,13 @@ const HoverCardDemo = ({ src, alt, initials }: Props) => (
 							</Button>
 						</div>
 					</div>
-					<div>
-						<div className="text-base font-semibold leading-none">
-							Roy Quilor
-						</div>
-						<div className="text-sm text-slate-500">@royquilor</div>
-					</div>
-					<div className="text-sm">
-						Improve your design skills by making projects. 1 every week,
-						practice with me on Youtube. I use Figma, Tailwind CSS and Webflow.
-					</div>
-					<div className="flex gap-x-4">
-						<div className="flex gap-x-1">
-							<div className="text-sm font-bold leading-none">249</div>
-							<div className="text-sm text-slate-500 leading-none">
-								Following
-							</div>
-						</div>
-						<div className="flex gap-x-1">
-							<div className="text-sm font-bold leading-none">663</div>
-							<div className="text-sm text-slate-500 leading-none">
-								Followers
-							</div>
-						</div>
-					</div>
+					<UserCard
+						name={name}
+						username={username}
+						description={description}
+						following={following}
+						followers={followers}
+					/>
 				</div>
 			</HoverCard.Content>
 		</HoverCard.Portal>

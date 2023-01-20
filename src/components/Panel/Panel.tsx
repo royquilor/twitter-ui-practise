@@ -1,6 +1,13 @@
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
-const Panel = ({ title, href, children }) => {
+interface Props {
+	title: string;
+	href: string;
+	children: ReactNode;
+}
+
+const Panel = ({ title, href, children }: Props) => {
 	return (
 		<div className="bg-slate-50 rounded-xl mb-3">
 			<div className="px-4 py-4">

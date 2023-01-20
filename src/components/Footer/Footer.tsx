@@ -22,9 +22,7 @@ const Footer = () => {
 				<Link className="" href="/">
 					More
 				</Link>
-				<div className="" href="/">
-					© 2023
-				</div>
+				<div className="">© 2023</div>
 			</div>
 		</div>
 	);

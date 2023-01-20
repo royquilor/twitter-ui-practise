@@ -33,7 +33,7 @@ const TweetForm = ({ width }) => {
 					<input
 						type="textarea"
 						placeholder="What's up?"
-						className="w-full px-4 py-3 text-xl border-slate-200 placeholder:text-slate-600"
+						className="w-full px-4 py-3 text-xl border-slate-200 placeholder:text-slate-600 focus:outline-none"
 					/>
 				</div>
 				<div className="flex justify-between items-center">

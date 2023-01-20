@@ -1,6 +1,6 @@
 import { NavItem } from '../NavItem/NavItem';
 import { SiTwitter } from 'react-icons/si';
-import AccountNavItem from '../AccountNavItem';
+import AccountNavItem from '../AccountNavItem/AccountNavItem';
 import { HiOutlineHome } from 'react-icons/hi2';
 import { HiHashtag } from 'react-icons/hi2';
 import { HiOutlineBell } from 'react-icons/hi2';

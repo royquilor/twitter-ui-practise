@@ -1,6 +1,13 @@
 import Image from 'next/image';
 
-const Bio = ({ avatar, name, tagline, role }) => {
+interface Props {
+	avatar: string;
+	name: string;
+	tagline: string;
+	role: string;
+}
+
+const Bio = ({ avatar, name, tagline, role }: Props) => {
 	return (
 		<div className="flex gap-x-5 gap-y-5 p-8">
 			<div className="flex-shrink-0 text-xs">
