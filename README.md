@@ -37,34 +37,16 @@ People I followed and checked out their repositories and videos to build the clo
 - [Lee Rob](https://github.com/leerob)
 
 ### Misc
-https://omkarkulkarni.vercel.app/snippets/reusable-button-component
-https://omkarkulkarni.vercel.app/snippets/absolute-imports
+- [Reusable button component](https://omkarkulkarni.vercel.app/snippets/reusable-button-component)
+- [Absolute imports](https://omkarkulkarni.vercel.app/snippets/absolute-imports)
 
 ## Text component
 
 [Text component youtube video](https://www.youtube.com/watch?v=b1NEj8HG1yU)
 
-## Absolute alias path to import components
-in tsconfig.json on
-``` 
-"compilerOptions": {
-  "paths": {
-			"@ui/*": ["./src/components/ui/*"]
-		}
-}
-```
-
 ## Storybook
 
-https://storybook.js.org/addons/storybook-addon-next
-
-Update yous tsconfig file for alias paths
-```
-		"baseUrl": ".",
-		"paths": {
-			"@/components/*": ["components/*"]
-		}
-```
+[Storybook addon next](https://storybook.js.org/addons/storybook-addon-next)
 
 ## Author
 
