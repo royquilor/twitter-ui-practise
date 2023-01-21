@@ -103,7 +103,7 @@ const DropdownMenuDemo = () => (
 					<DropdownMenuPrimitive.Item
 						key={`header-${i}`}
 						// value={`item-${i + 1}`}
-						className="rounded-lg focus:outline-none overflow-hidden"
+						className="xrounded-lg focus:outline-none overflow-hidden"
 					>
 						<NavItem href="{href}" width={width} size={size}>
 							{icon}
