@@ -95,7 +95,7 @@ const DropdownMenuDemo = () => (
 				align="end"
 				className={cx(
 					'DropdownMenuContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
-					'rounded-lg shadow-2xl w-80',
+					'rounded-lg shadow-2xl w-80 overflow-hidden',
 					'bg-white dark:bg-gray-800 border border-slate-200',
 				)}
 			>
@@ -103,7 +103,7 @@ const DropdownMenuDemo = () => (
 					<DropdownMenuPrimitive.Item
 						key={`header-${i}`}
 						// value={`item-${i + 1}`}
-						className="xrounded-lg focus:outline-none overflow-hidden"
+						className="focus:outline-none overflow-hidden"
 					>
 						<NavItem href="{href}" width={width} size={size}>
 							{icon}
