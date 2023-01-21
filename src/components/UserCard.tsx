@@ -14,7 +14,7 @@ const UserCard = ({
 	<>
 		<div className="mb-2">
 			<div className="text-base font-semibold leading-none">{name}</div>
-			<div className="text-sm text-slate-500">@{username}</div>
+			<div className="text-sm text-slate-500 font-medium">@{username}</div>
 		</div>
 		<div className="text-sm mb-2">{description}</div>
 		<div className="flex gap-x-4">

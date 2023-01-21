@@ -8,7 +8,7 @@ const Search = () => (
 				<input
 					type="search"
 					placeholder="Search"
-					className="w-full flex items-center pl-10 pr-4 text-sm placeholder:text-sm py-2 bg-slate-100 border-slate-100 placeholder:text-slate-700 rounded-full"
+					className="w-full flex items-center pl-10 pr-4 text-sm placeholder:text-sm placeholder:font-medium py-2 bg-slate-100 border-slate-100 placeholder:text-slate-700 rounded-full"
 				/>
 				<button className="sr-only bg-slate-900 font-bold text-white px-4 py-2 text-sm rounded-full">
 					Tweet

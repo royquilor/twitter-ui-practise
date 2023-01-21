@@ -15,8 +15,8 @@ const PanelItem = ({ name, username, src, initials }: Props) => (
 				<Avatar src={src} alt={name} initials={initials} />
 			</div>
 			<div className="hidden xl:flex flex-col ">
-				<p className="text-base">{name}</p>
-				<p className="text-xs text-slate-500">@{username}</p>
+				<p className="text-base font-semibold">{name}</p>
+				<p className="text-sm text-slate-600 font-medium">@{username}</p>
 			</div>
 		</div>
 		<div className="">
