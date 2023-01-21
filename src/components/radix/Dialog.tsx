@@ -6,7 +6,7 @@ import Button from '@ui/Button';
 const DialogDemo = () => (
 	<DialogPrimitive.Root>
 		<DialogPrimitive.Trigger asChild>
-			<div className="w-full flex justify-center xl:justify-start mt-5">
+			<div className="w-full flex justify-center xl:justify-start mt-5 appearance-none">
 				<Button size="large">
 					<HiOutlinePencil className="w-6 h-6 xl:hidden" />
 					<span className="hidden xl:flex">Tweet</span>

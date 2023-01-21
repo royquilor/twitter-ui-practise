@@ -56,7 +56,7 @@ const PopoverDemo = () => (
 				side="top"
 				sideOffset={-60}
 				alignOffset={0}
-				className="PopoverContent overflow-hidden w-80 rounded-xl shadow-xl border border-slate-200 bg-white dark:bg-gray-800"
+				className="PopoverContent overflow-hidden w-80 rounded-xl shadow-xl border border-slate-200 bg-white"
 			>
 				<div className="flex flex-col">
 					{items.map(({ href, text, icon }, i) => (
@@ -74,7 +74,7 @@ const PopoverDemo = () => (
 					))}
 				</div>
 
-				<SeparatorPrimitive.Root className="h-px bg-slate-200 border-0 dark:bg-slate-700" />
+				<SeparatorPrimitive.Root className="h-px bg-slate-200 border-0" />
 
 				<Accordion />
 			</PopoverPrimitive.Content>

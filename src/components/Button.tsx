@@ -7,7 +7,7 @@ interface Props {
 }
 
 const ButtonStyles = cva(
-	'inline-flex items-center font-bold rounded-full border ',
+	'inline-flex items-center font-bold rounded-full border',
 	{
 		variants: {
 			intent: {

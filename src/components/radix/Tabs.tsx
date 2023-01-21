@@ -6,7 +6,7 @@ import Feed from '@ui/Feed';
 const Tabs = () => (
 	<TabsPrimitive.Root className="TabsRoot" defaultValue="tab1">
 		<TabsPrimitive.List
-			className="TabsList flex w-full bg-white dark:bg-gray-800 border-b border-b-slate-200"
+			className="TabsList flex w-full bg-white border-b border-b-slate-200"
 			aria-label="Manage your account"
 		>
 			<TabsPrimitive.Trigger
