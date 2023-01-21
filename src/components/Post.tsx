@@ -60,7 +60,7 @@ const Post = ({
 					<DropdownMenuDemo />
 				</div>
 			</div>
-			<div className="text-sm text-slate-900 font-medium mb-4">{content}</div>
+			<div className="text-sm text-slate-900 mb-4">{content}</div>
 			{children}
 			<div>
 				<ul className="flex gap-x-10 xl:gap-x-14 text-xs text-slate-700 [&_li:first-child]:hidden [&_li:first-child]:lg:flex [&_li]:flex [&_li]:items-center [&_li]:gap-x-2 [&_li:xl]:gap-x-3 ">

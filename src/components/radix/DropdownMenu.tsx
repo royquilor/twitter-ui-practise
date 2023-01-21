@@ -95,7 +95,7 @@ const DropdownMenuDemo = () => (
 				align="end"
 				className={cx(
 					'DropdownMenuContent radix-side-top:animate-slide-up radix-side-bottom:animate-slide-down',
-					'rounded-lg shadow-2xl w-72',
+					'rounded-lg shadow-2xl w-80',
 					'bg-white dark:bg-gray-800 border border-slate-200',
 				)}
 			>

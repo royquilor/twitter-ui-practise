@@ -101,7 +101,7 @@ const items: PostItem[] = [
 		username: 'jeandoe',
 		following: '186',
 		followers: '90',
-		content: 'Vercel and Neflify are pretty cool',
+		content: 'Vercel and Netlify are pretty cool',
 		description: 'Radix UI Avenger',
 		date: '7h',
 		src: 'https://images.unsplash.com/photo-1597248374161-426f0d6d2fc9?ixlib=rb-1.2.1&w=128&h=128&dpr=2&q=80',
