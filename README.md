@@ -41,7 +41,6 @@ People I followed and checked out their repositories and videos to build the clo
 If you checkout the package.json, let me try and explain a few
 - class-variance-authority: enables you to create variants for things like buttons. If you are a designer, it is like Figma's component variants.
 - classnames: If you style a component such as Radix UI components, you can have a long line of css utility classes when you use Tailwind CSS. You might have hover, animation, responsive, layout and other classes. Now you can group them on separate lines.
-I know classnames can be a hot topic, this is just my personal take on it. 
 
 ## Text component
 
