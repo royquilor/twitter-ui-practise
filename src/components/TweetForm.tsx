@@ -33,9 +33,9 @@ const TweetForm = ({ width }: { width: 'default' | 'full' }) => (
 		<form className="flex flex-col flex-1 gap-y-4">
 			<div className="flex flex-1">
 				<input
-					type="textarea"
+					type="text"
 					placeholder="What's up?"
-					className="w-full px-4 py-3 text-xl border-slate-200 placeholder:text-slate-600 focus:outline-none"
+					className="w-full px-4 py-3 text-xl border-transparent placeholder:text-slate-600 outline-0 focus:outline-none appearance-none focus:ring-0 focus:border-transparent"
 				/>
 			</div>
 			<div className="flex justify-between items-center">
