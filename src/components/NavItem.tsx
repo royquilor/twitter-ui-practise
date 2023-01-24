@@ -21,7 +21,7 @@ const NavItemStyles = cva(
 			},
 			size: {
 				default: '',
-				small: 'py-0 [&_div:last-child]:text-sm my-0',
+				small: 'py-2 [&_div:last-child]:text-sm my-0',
 				large: '',
 			},
 		},
