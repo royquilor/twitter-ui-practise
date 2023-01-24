@@ -39,14 +39,12 @@ const PopoverDemo = () => (
 	<PopoverPrimitive.Root>
 		<PopoverPrimitive.Trigger asChild>
 			<button
-				className="focus:outline-none items-center gap-x-4 text-slate-900 my-1 inline-flex [&_div:first-child]:rounded-full"
+				className="flex flex-row max-w-fit px-4 py-3 hover:bg-slate-100 focus:outline-none items-center gap-x-4 text-slate-900 my-1 rounded-full"
 				aria-label="Update dimensions"
 			>
-				<div className="flex items-center flex-row gap-x-4 px-4 py-3 hover:bg-slate-100">
-					<HiOutlineEllipsisHorizontalCircle className="w-6 h-6" />
-					<div className="hidden xl:inline-flex flex-none text-lg font-medium">
-						More
-					</div>
+				<HiOutlineEllipsisHorizontalCircle className="w-6 h-6" />
+				<div className="hidden xl:inline-flex flex-none text-lg font-medium">
+					More
 				</div>
 			</button>
 		</PopoverPrimitive.Trigger>
